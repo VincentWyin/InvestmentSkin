@@ -30,8 +30,11 @@
   </head>
 
   <body class="nav-md">
+	  
     <div class="container body">
+		
       <div class="main_container">
+		  
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
@@ -59,7 +62,7 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                    <li >
+                    <li>
                         <a><i class="fa fa-user"></i> Contact <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
                             <li><a href="contact_index.html">List Page</a></li>
@@ -69,26 +72,25 @@
                     <li>
                         <a><i class="fa fa-bank"></i> Investor <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="investor_index.html">List Page</a></li>
+                            <li><a href="investor_index.html">Summary Page</a></li>
                             <li><a href="investor_new.html">New Investor</a></li>
                         </ul>
                     </li>
                     <li>
                         <a><i class="fa fa-money"></i> Fund <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="fund_index.html">List Page</a></li>
+                            <li><a href="fund_index.html">Summary Page</a></li>
                             <li><a href="fund_new.html">New Fund</a></li>
                         </ul>
                     </li>
                     <li class="active">
                         <a><i class="fa fa-flag-o"></i> Investment <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
-                            <li><a href="investment_index.html">List Page</a></li>
+                            <li><a href="investment_index.html">Summary Page</a></li>
                             <li><a href="investment_new.html">New Investment</a></li>
                         </ul>
                     </li>
                     <li><a><i class="fa fa-dashboard"></i> Performance Analysis</a></li>
-                    <li><a><i class="fa fa-file"></i> Search Attachment</a></li>
                 </ul>
               </div>
 
@@ -123,7 +125,7 @@
                 </div>
 
                 <div class="nav navbar-nav navbar-left hidden-xs" style="padding-top:10px;">
-                    <span class="text-primary lh40">Investment \ List</span>
+                    <span class="text-primary lh40">Investment \ Summary</span>
                 </div>
 
               <ul class="nav navbar-nav navbar-right" style="width: 55%;">
@@ -217,374 +219,148 @@
 
         <!-- page content -->
         <div class="right_col" role="main">
-          <div class="">
 			
 			<div class="row">
-              <div class="col-md-12 col-sm-12 col-xs-12">
-                  <div class="x_panel">
-                      <div class="x_title" id="search_title">
-                          <h2>Search Criteria</h2>
-                          <ul class="nav navbar-right panel_toolbox">
-                              <li>
-                                  <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                              </li>
-                              <li>
-                                  <a class="close-link"><i class="fa fa-close"></i></a>
-                              </li>
-                          </ul>
-                          <div class="clearfix"></div>
-                      </div>
-                      <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
-
-                          <div class="x_content">
-                              <div class="row">
-                                  <div class="col-md-4 col-sm-4 col-xs-12">
-                                      <div class="form-group">
-                                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">
-                                              First Name
-                                          </label>
-                                          <div class="col-md-6 col-sm-6 col-xs-12">
-                                              <input type="text" id="first-name" class="form-control col-md-7 col-xs-12">
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">
-                                              Last Name
-                                          </label>
-                                          <div class="col-md-6 col-sm-6 col-xs-12">
-                                              <input type="text" id="last-name" name="last-name" class="form-control col-md-7 col-xs-12">
-                                          </div>
-                                      </div>
-                                      <div class="form-group hidden-xs">
-                                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Country</label>
-                                          <div class="col-md-6 col-sm-6 col-xs-12">
-                                              <select class="form-control">
-                                                  <option>- Not Specified -</option>
-                                                  <option>China</option>
-                                                  <option>Hong Kong S.A.R.</option>
-                                                  <option>Japan</option>
-                                                  <option>Malaysia</option>
-                                                  <option>Singapore</option>
-                                                  <option>Taiwan</option>
-                                                  <option>United Kingdom</option>
-                                                  <option>USA</option>
-                                              </select>
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <label class="control-label col-md-3 col-sm-3 col-xs-12">Gender</label>
-                                          <div class="col-md-6 col-sm-6 col-xs-12">
-                                              <div id="gender" class="btn-group" data-toggle="buttons">
-                                                  <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                                                      <input type="radio" name="gender" value="male"> &nbsp; Male &nbsp;
-                                                  </label>
-                                                  <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-                                                      <input type="radio" name="gender" value="female"> Female
-                                                  </label>
-                                              </div>
-                                          </div>
-                                      </div>
-
-                                      <div class="form-group hidden-xs">
-                                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Activity Type</label>
-                                          <div class="col-md-6 col-sm-6 col-xs-12">
-                                              <select class="form-control">
-                                                  <option>- Not Specified -</option>
-                                                  <option>Capital Call cc</option>
-                                                  <option>Capital Call</option>
-                                                  <option>Cash Distribution cc</option>
-                                                  <option>Cash Distribution</option>
-                                                  <option>Mail Merge</option>
-                                                  <option>Stock Distribution cc</option>
-                                                  <option>Stock Distribution</option>
-                                                  <option>Cold Call</option>
-                                                  <option>Conversation</option>
-                                                  <option>Document</option>
-                                                  <option>Email Mesage</option>
-                                                  <option>Fax</option>
-                                                  <option>Sell</option>
-                                                  <option>Buy</option>
-                                              </select>
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <div class="col-md-4 col-sm-4 col-xs-12">
-                                      <div class="form-group hidden-xs">
-                                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">
-                                              City
-                                          </label>
-                                          <div class="col-md-6 col-sm-6 col-xs-12">
-                                              <input type="text" id="first-name" class="form-control col-md-7 col-xs-12">
-                                          </div>
-                                      </div>
-                                      <div class="form-group hidden-xs">
-                                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">
-                                              State
-                                          </label>
-                                          <div class="col-md-6 col-sm-6 col-xs-12">
-                                              <input type="text" id="last-name" name="last-name" class="form-control col-md-7 col-xs-12">
-                                          </div>
-                                      </div>
-                                      <div class="form-group hidden-xs">
-                                          <label class="control-label col-md-3 col-sm-3 col-xs-12">Tabs</label>
-                                          <div class="col-md-6 col-sm-6 col-xs-12">
-                                              <div class="checkbox">
-                                                  <label>
-                                                      <input type="checkbox" checked value=""> General
-                                                  </label>
-                                              </div>
-                                              <div class="checkbox">
-                                                  <label>
-                                                      <input type="checkbox" checked value=""> Details
-                                                  </label>
-                                              </div>
-                                              <div class="checkbox">
-                                                  <label>
-                                                      <input type="checkbox" checked value=""> Inv.Pref
-                                                  </label>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <div class="col-md-4 col-sm-4 col-xs-12">
-                                      <div class="form-group hidden-xs">
-                                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="geo_preference">
-                                              Geographic
-                                          </label>
-                                          <div class="col-md-6 col-sm-6 col-xs-12">
-                                              <select class="form-control" id="geo_preference">
-                                                  <option>- Not Specified -</option>
-                                                  <option>Africa</option>
-                                                  <option>Asia Pacific</option>
-                                                  <option>Europe</option>
-                                                  <option>Middle East</option>
-                                                  <option>North America</option>
-                                                  <option>South America</option>
-                                              </select>
-                                          </div>
-                                      </div>
-                                      <div class="form-group hidden-xs">
-                                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="industry_preference">
-                                              Industry
-                                          </label>
-                                          <div class="col-md-6 col-sm-6 col-xs-12">
-                                              <select class="form-control" id="industry_preference">
-                                                  <option>- Not Specified -</option>
-                                                  <option>Bio-Tech</option>
-                                                  <option>Finance</option>
-                                                  <option>I.T.</option>
-                                                  <option>Logistic</option>
-                                                  <option>Medicine</option>
-                                              </select>
-                                          </div>
-                                      </div>
-                                      <div class="form-group">
-                                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="investment_stage">
-                                              Inv. Stage
-                                          </label>
-                                          <div class="col-md-6 col-sm-6 col-xs-12">
-                                              <select class="form-control" id="investment_stage">
-                                                  <option>- Not Specified -</option>
-                                                  <option>Seek Capital</option>
-                                                  <option>Start-up/Early stage</option>
-                                                  <option>Expansion/Development</option>
-                                                  <option>Mezzanine/Bridge finance</option>
-                                                  <option>Buy-out/Buy-in</option>
-                                              </select>
-                                          </div>
-                                      </div>
-                                      <div class="form-group hidden-xs">
-                                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="type_of_fund">
-                                              Type of Fund
-                                          </label>
-                                          <div class="col-md-6 col-sm-6 col-xs-12">
-                                              <select class="form-control" id="type_of_fund">
-                                                  <option>- Not Specified -</option>
-                                                  <option>Venture Capital</option>
-                                                  <option>Buy-outs</option>
-                                                  <option>Mezannine</option>
-                                                  <option>Country specific</option>
-                                                  <option>Technology only</option>
-                                              </select>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-
-                              <div class="form-group" style="margin-top:15px;">
-                                  <div class="col-md-12 col-sm-12 col-xs-12">
-                                      <button class="btn btn-primary" type="reset">Reset</button>
-                                      <button type="submit" class="btn btn-success">Submit</button>
-                                  </div>
-                              </div>
-
-                          </div>
-                      </form>
-                  </div>
-                </div>
-              </div>
+				
+				<div class="col-md-12">
+					<div class="x_panel">
+						<div class="x_title">
+	                        <h2>Investment, group by 
+								<select>
+									<option>Category</option>
+								</select>
+						  	</h2>
+	                        <ul class="nav navbar-right panel_toolbox">
+	                            <li>
+	                                <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+	                            </li>
+	                            <li>
+	                                <a class="close-link"><i class="fa fa-close"></i></a>
+	                            </li>
+	                        </ul>
+	                        <div class="clearfix"></div>
+						</div>
+						<div class="x_content">
+							<div class="row">
+								<div class="col-xl-8 col-md-8 col-sm-8 col-xs-12">
+		  						  <table class="" style="width:100%">
+		  		                      <tr>
+		  		                        <th style="width:30%;">
+		  		                          <p>Category</p>
+		  		                        </th>
+		  		                        <th style="width:40%;">
+		  		                          <p>Investment Type</p>
+		  		                        </th>
+		  		                        <th style="width:15%;">
+		  		                          <p>Count</p>
+		  		                        </th>
+		  		                        <th style="width:15%;">
+		  		                          <p>Percentage</p>
+		  		                        </th>
+		  		                      </tr>
+		  		                      <tr>
+		  	                              <td>Direct Investment</td>
+		  	                              <td><p><i class="fa fa-square blue"></i> Prospective Company</p></td>
+		  								  <td>30</td>
+		  	                              <td>30%</td>
+		  							  </tr>
+		  		                      <tr>
+		  	                              <td></td>
+		  	                              <td><p><i class="fa fa-square green"> </i> Active Company</p></td>
+		  								  <td>35</td>
+		  	                              <td>35%</td>
+		  							  </tr>
+		  								<tr>
+		  	                              <td></td>
+		  									<td><p><i class="fa fa-square purple"></i> Disposed Company</p></td>
+		  									<td>20</td>
+		  									<td>20%</td>
+		  								</tr>
+		  								<tr>
+		  	                              <td></td>
+		  									<td><p><i class="fa fa-square aero"></i> Dead Company</p></td>
+		  								    <td>15</td>
+		  									<td>15%</td>
+		  								</tr>
+		  		                      <tr>
+		  	                              <td>LP </td>
+		  	                              <td><p><i class="fa fa-square blue"></i> Prospective Company</p></td>
+		  								  <td>30</td>
+		  	                              <td>30%</td>
+		  							  </tr>
+		  		                      <tr>
+		  	                              <td></td>
+		  	                              <td><p><i class="fa fa-square green"> </i> Active Company</p></td>
+		  								  <td>35</td>
+		  	                              <td>35%</td>
+		  							  </tr>
+		  								<tr>
+		  	                              <td></td>
+		  									<td><p><i class="fa fa-square purple"></i> Disposed Company</p></td>
+		  									<td>20</td>
+		  									<td>20%</td>
+		  								</tr>
+		  								<tr>
+		  	                              <td></td>
+		  									<td><p><i class="fa fa-square aero"></i> Dead Company</p></td>
+		  								    <td>15</td>
+		  									<td>15%</td>
+		  								</tr>
+		  	                      </table>
+								</div>
+								<div class="col-xl-4 col-md-4 col-sm-4 col-xs-12">
+	  	                        	<canvas class="canvasDoughnut"></canvas>
+								</div>
+							</div>
+						</div>
+				    </div>
+				</div>
+			  
             </div>
+			
+			<div class="row">
+				
+				<div class="col-xs-12 col-md-12 col-xs-12">
 
-            <div class="x_panel">
-                <div class="x_content">
-                    <div class="table-responsive">
-                        <table class="table table-striped jambo_table bulk_action">
-                            <thead>
-                                <tr class="headings">
-                                    <th>
-                                        <input type="checkbox" id="check-all" class="flat">
-                                    </th>
-                                    <th class="column-title">Person/Company Name</th>
-                                    <th class="column-title">Primary Phone No.</th>
-                                    <th class="column-title">Is Company</th>
-                                    <th class="column-title">Primary Contact</th>
-                                    <th class="column-title">Belongs to Comapny</th>
-                                    <th class="column-title">Countrty</th>
-                                    <th class="column-title no-link last">
-                                        <span class="nobr">Action</span>
-                                    </th>
-                                    <th class="bulk-actions" colspan="7">
-                                        <div class="btn-group">
-                                            <a data-toggle="dropdown" class="dropdown-toggle antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i> </a>
-                                            <ul class="dropdown-menu" style="left:60px; top:25px;">
-                                                <li>
-                                                    <a href="#" style="line-height:30px;">Merge</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" style="line-height:30px;">Assign new group</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </th>
-                                </tr>
-                            </thead>
+		            <div class="x_panel">
+						<div class="x_title">
+	                        <h2>Investment Name: <input type="text"> 
+						  	</h2>
+							<div class="pull-right mt5">
+								<button>search</button>
+							</div>
+	                        <div class="clearfix"></div>
+						</div>
+		                <div class="x_content" style="height:200px;">
+		                    <div class="table-responsive">
+		                        <table class="table table-striped">
+		                            <thead>
+		                                <tr class="headings">
+		                                    <th>
+		                                        <input type="checkbox" id="check-all" class="flat">
+		                                    </th>
+		                                    <th class="column-title">Investment Name</th>
+		                                    <th class="column-title">Lagal Name</th>
+		                                    <th class="column-title">Category</th>
+		                                    <th class="column-title">Country</th>
+		                                    <th class="column-title">Region</th>
+		                                    <th class="column-title">Industry</th>
+		                                </tr>
+		                            </thead>
+		                            <tbody>
+		                            </tbody>
+		                        </table>
+		                    </div>
+		                </div>
+		            </div>
+					
+				</div>
+				
+			</div>
 
-                            <tbody>
-                                <tr class="even pointer">
-                                    <td class="a-center ">
-                                        <input type="checkbox" class="flat" name="table_records">
-                                    </td>
-                                    <td class=" ">ABC Company</td>
-                                    <td class=" ">193 4232 4231</td>
-                                    <td class=" ">Yes</td>
-                                    <td class=" ">John Blank L</td>
-                                    <td class=" ">ABC Holding Company</td>
-                                    <td class="a-right a-right ">USA</td>
-                                    <td class=" last">
-                                        <a href="#">View</a>
-                                    </td>
-                                </tr>
-                                <tr class="odd pointer">
-                                    <td class="a-center ">
-                                        <input type="checkbox" class="flat" name="table_records">
-                                    </td>
-                                    <td class=" ">Vincent Chui</td>
-                                    <td class=" ">3823 4232</td>
-                                    <td class=" ">No</td>
-                                    <td class=" "></td>
-                                    <td class=" ">ABC Company</td>
-                                    <td class="a-right a-right ">USA</td>
-                                    <td class=" last">
-                                        <a href="#">View</a>
-                                    </td>
-                                </tr>
-                                <tr class="even pointer">
-                                    <td class="a-center ">
-                                        <input type="checkbox" class="flat" name="table_records">
-                                    </td>
-                                    <td class=" ">ABC Company</td>
-                                    <td class=" ">193 4232 4231</td>
-                                    <td class=" ">Yes</td>
-                                    <td class=" ">John Blank L</td>
-                                    <td class=" ">ABC Holding Company</td>
-                                    <td class="a-right a-right ">USA</td>
-                                    <td class=" last">
-                                        <a href="#">View</a>
-                                    </td>
-                                </tr>
-                                <tr class="odd pointer">
-                                    <td class="a-center ">
-                                        <input type="checkbox" class="flat" name="table_records">
-                                    </td>
-                                    <td class=" ">Vincent Chui</td>
-                                    <td class=" ">3823 4232</td>
-                                    <td class=" ">No</td>
-                                    <td class=" "></td>
-                                    <td class=" ">ABC Company</td>
-                                    <td class="a-right a-right ">USA</td>
-                                    <td class=" last">
-                                        <a href="#">View</a>
-                                    </td>
-                                </tr>
-                                <tr class="even pointer">
-                                    <td class="a-center ">
-                                        <input type="checkbox" class="flat" name="table_records">
-                                    </td>
-                                    <td class=" ">ABC Company</td>
-                                    <td class=" ">193 4232 4231</td>
-                                    <td class=" ">Yes</td>
-                                    <td class=" ">John Blank L</td>
-                                    <td class=" ">ABC Holding Company</td>
-                                    <td class="a-right a-right ">USA</td>
-                                    <td class=" last">
-                                        <a href="#">View</a>
-                                    </td>
-                                </tr>
-                                <tr class="odd pointer">
-                                    <td class="a-center ">
-                                        <input type="checkbox" class="flat" name="table_records">
-                                    </td>
-                                    <td class=" ">Vincent Chui</td>
-                                    <td class=" ">3823 4232</td>
-                                    <td class=" ">No</td>
-                                    <td class=" "></td>
-                                    <td class=" ">ABC Company</td>
-                                    <td class="a-right a-right ">USA</td>
-                                    <td class=" last">
-                                        <a href="#">View</a>
-                                    </td>
-                                </tr>
-                                <tr class="even pointer">
-                                    <td class="a-center ">
-                                        <input type="checkbox" class="flat" name="table_records">
-                                    </td>
-                                    <td class=" ">ABC Company</td>
-                                    <td class=" ">193 4232 4231</td>
-                                    <td class=" ">Yes</td>
-                                    <td class=" ">John Blank L</td>
-                                    <td class=" ">ABC Holding Company</td>
-                                    <td class="a-right a-right ">USA</td>
-                                    <td class=" last">
-                                        <a href="#">View</a>
-                                    </td>
-                                </tr>
-                                <tr class="odd pointer">
-                                    <td class="a-center ">
-                                        <input type="checkbox" class="flat" name="table_records">
-                                    </td>
-                                    <td class=" ">Vincent Chui</td>
-                                    <td class=" ">3823 4232</td>
-                                    <td class=" ">No</td>
-                                    <td class=" "></td>
-                                    <td class=" ">ABC Company</td>
-                                    <td class="a-right a-right ">USA</td>
-                                    <td class=" last">
-                                        <a href="#">View</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <div class="clearfix"></div>
-        </div>
+		</div>
         <!-- /page content -->
-
-        
+		
       </div>
     </div>
 
@@ -596,13 +372,38 @@
     <script src="../vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
     <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
     <!-- bootstrap-progressbar -->
     <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
     <!-- iCheck -->
     <script src="../vendors/iCheck/icheck.min.js"></script>
-
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+	
     <!-- Custom Theme Scripts -->
-    <script src="../build/js/custom.min.js"></script>
+    <script src="../build/js/custom.js"></script>
 
     <script>
         $(function () {
