@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>System Name Here</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- PNotify -->
+    <link href="../vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+    <link href="../vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+    <link href="../vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+
+          <div class="col-md-3 left_col">
+            <div class="left_col scroll-view">
+              <div class="navbar nav_title" style="border: 0;">
+                <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>System Name Here</span></a>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <!-- menu profile quick info -->
+              <div class="profile clearfix">
+                <div class="profile_pic">
+                  <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+                </div>
+                <div class="profile_info">
+                  <span>Welcome,</span>
+                  <h2>User xxx</h2>
+                </div>
+              </div>
+              <!-- /menu profile quick info -->
+
+              <br />
+
+              <!-- sidebar menu -->
+              <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                <div class="menu_section">
+                  <h3>General</h3>
+                  <ul class="nav side-menu">
+                      <li>
+                          <a><i class="fa fa-user"></i> Contact <span class="fa fa-chevron-down"></span></a>
+                          <ul class="nav child_menu">
+                              <li><a href="contact_index.html">Summary Page</a></li>
+                              <li><a href="contact_new_person.html">New Person</a></li>
+                          </ul>
+                      </li>
+                    <li>
+                        <a><i class="fa fa-bank"></i> Investor <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                            <li><a href="investor_index.html">Summary Page</a></li>
+                            <li><a href="investor_new.html">New Investor</a></li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a><i class="fa fa-money"></i> Fund <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                            <li><a href="fund_index.html">Summary Page</a></li>
+                            <li><a href="fund_new.html">New Fund</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a><i class="fa fa-flag-o"></i> Investment <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                            <li><a href="investment_index.html">Summary Page</a></li>
+                            <li><a href="investment_new_LP_interest.html">New LP Interest</a></li>
+                        </ul>
+                    </li>
+                      <li><a><i class="fa fa-dashboard"></i> Performance Analysis</a></li>
+                  </ul>
+                </div>
+
+              </div>
+              <!-- /sidebar menu -->
+
+              <!-- /menu footer buttons -->
+              <div class="sidebar-footer hidden-small">
+                <a data-toggle="tooltip" data-placement="top" title="Settings">
+                  <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                </a>
+                <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                  <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+                </a>
+                <a data-toggle="tooltip" data-placement="top" title="Lock">
+                  <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+                </a>
+                <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                  <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                </a>
+              </div>
+              <!-- /menu footer buttons -->
+            </div>
+          </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+                <div class="nav navbar-nav navbar-left hidden-xs" style="padding-top:10px;">
+                    <span class="text-primary lh40">Fund \ Add Fund</span>
+                </div>
+
+              <ul class="nav navbar-nav navbar-right" style="width: 55%;">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    User xxxx
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Profile</a></li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Settings</span>
+                      </a>
+                    </li>
+                    <li><a href="javascript:;">Help</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+
+            <ul class="nav nav-tabs">
+                <li class="active ml10"><a data-toggle="tab" href="#profile">Profile</a></li>
+                <li><a href="#relationships" data-toggle="tab">P-C RelationShips</a></li>
+                <li class="hidden-xs"><a href="#scheme" data-toggle="tab" >Ratio Schemes</a></li>
+                <li class="hidden-xs"><a href="#capital" data-toggle="tab" >Capital Calls</a></li>
+                <li class="hidden-xs"><a href="#cash_distributions" data-toggle="tab" >Cash Distributions</a></li>
+                <li class="hidden-xs"><a href="#stock_distributions" data-toggle="tab" >Stock Distributions</a></li>
+                <li class="hidden-xs"><a href="#portfolio" data-toggle="tab" >Portfolio Accounting</a></li>
+                <li class="hidden-xs"><a href="#roles" data-toggle="tab">Contact Roles</a></li>
+                <li class="hidden-xs"><a href="#snapshot" data-toggle="tab" >Snapshot</a></li>
+                <li class="hidden-xs"><a href="#event" data-toggle="tab" >Event</a></li>
+                <li class="hidden-xs"><a href="#attachments" data-toggle="tab">File Attachments</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="profile" class="tab-pane fade in active bg-white p10">
+                    <form id="contact-form-general" data-parsley-validate class="form-horizontal form-label-left">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="x_panel">
+                                    <div class="x_content">
+                                        <div class="form-group hidden-xs">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="reference-numnber">
+                                                Ref. No.
+                                            </label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <input type="text" id="reference-numnber" disabled class="form-control col-md-7 col-xs-12">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="full-name">
+                                                Fund Legal Name <span class="required">*</span>
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <input type="text" id="full-name" required="required" class="form-control col-md-7 col-xs-12">
+                                            </div>
+                                        </div>
+                                        <div class="form-group hidden-xs">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                                Fund Name for Display
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                            </div>
+                                        </div>
+                                        <div class="form-group hidden-xs">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                                Tax ID
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                            </div>
+                                        </div>
+                                        <div class="form-group hidden-xs">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                                Tax Shelter ID
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                            </div>
+                                        </div>
+										
+                                        <div class="clearfix"></div>
+                                        <h5 class="mt10 text-primary">Address</h5>
+
+										<div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">
+                                                Address
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <textarea id="address" class="form-control" name="address" data-parsley-trigger="keyup"
+                                                          data-parsley-minlength="20" data-parsley-maxlength="100"
+                                                          data-parsley-validation-threshold="10"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group hidden-xs">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                                City
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                            </div>
+                                        </div>
+                                        <div class="form-group hidden-xs">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                                State/Province
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                            </div>
+                                        </div>
+                                        <div class="form-group hidden-xs">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                                Zip/Postal Code
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Country</label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                              <select class="form-control">
+                                                  <option>- Not Specified -</option>
+                                                  <option>China</option>
+                                                  <option>Hong Kong S.A.R.</option>
+                                                  <option>Japan</option>
+                                                  <option>Malaysia</option>
+                                                  <option>Singapore</option>
+                                                  <option>Taiwan</option>
+                                                  <option>United Kingdom</option>
+                                                  <option>USA</option>
+                                              </select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12 hidden-xs">
+                                <div class="x_panel">
+                                    <div class="x_content">
+                                        
+                                        <div class="form-group">
+                                            <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Category</label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                              <select class="form-control" disabled>
+                                                  <option>Active Fund</option>
+                                              </select>
+                                            </div>
+                                        </div>
+										
+                                        <div class="form-group">
+                                            <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Fund Class</label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                              <select class="form-control">
+                                                  <option>- Not Specified -</option>
+                                              </select>
+                                            </div>
+                                        </div>
+										
+                                        <div class="form-group">
+                                            <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Fund Type</label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                              <select class="form-control">
+                                                  <option>- Not Specified -</option>
+                                              </select>
+                                            </div>
+                                        </div>
+										
+                                        <div class="form-group">
+                                            <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Entity Type</label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                              <select class="form-control">
+                                                  <option>- Not Specified -</option>
+                                              </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="control-group hidden-xs">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Fund Group</label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <input id="category" type="text" class="tags form-control" value="" />
+                                            </div>
+                                        </div>
+										
+                                        <div class="clearfix"></div>
+										<br/>
+										<br/>
+										
+                                        <div class="form-group">
+                                            <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Local Currency</label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                              <select class="form-control">
+                                                  <option>- Not Specified -</option>
+                                              </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group hidden-xs">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                                Management Company
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                            </div>
+                                        </div>
+                                        <div class="form-group hidden-xs">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                                General Partner
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                            </div>
+                                        </div>
+                                        <div class="form-group hidden-xs">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                                Rounding Partner
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                            </div>
+                                        </div>
+										
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+			            <ul class="nav nav-tabs">
+			                <li class="active ml10"><a data-toggle="tab" href="#f_comment">Comment</a></li>
+			                <li><a href="#f_detail" data-toggle="tab">Detail</a></li>
+			                <li class="hidden-xs"><a href="#f_investment_focus" data-toggle="tab" >Investment Focus</a></li>
+			                <li class="hidden-xs"><a href="#f_fund_fact" data-toggle="tab" >Fund Facts</a></li>
+			                <li class="hidden-xs"><a href="#f_status" data-toggle="tab" >Status</a></li>
+			                <li class="hidden-xs"><a href="#f_custom_data" data-toggle="tab" >Custom Data</a></li>
+			            </ul>
+
+						<div style="height:200px;overflow-y:hidden;">
+		                	<div id="f_comment" class="tab-pane fade in active b bg-white p10">
+                            <div class="x_panel">
+                                <div class="x_content">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="">
+                                                <a href="#" class="text-info"><i class="fa fa-plus"></i> Add Comment</a>
+                                            </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Date">
+                                                Date
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <input type="text" id="Date" class="form-control col-md-7 col-xs-12">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="comment">
+                                                Comment
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <textarea id="comment" class="form-control" name="comment" data-parsley-trigger="keyup"
+                                                          data-parsley-minlength="20" data-parsley-maxlength="100"
+                                                          data-parsley-validation-threshold="10"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 hidden-xs">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr class="headings">
+                                                        <th class="column-title">Data</th>
+                                                        <th class="column-title">Content</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody></tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+		                </div>
+		                <div id="f_detail" class="tab-pane fade bg-white p10">
+		                    <h5 style="text-align:center;">Work in Progress</h5>
+		                </div>
+		                <div id="f_investment_focus" class="tab-pane fade bg-white p10">
+		                    <h5 style="text-align:center;">Work in Progress</h5>
+		                </div>
+		                <div id="f_fund_fact" class="tab-pane fade bg-white p10">
+		                    <h5 style="text-align:center;">Work in Progress</h5>
+		                </div>
+		                <div id="f_status" class="tab-pane fade bg-white p10">
+		                    <h5 style="text-align:center;">Work in Progress</h5>
+		                </div>
+		                <div id="f_custom_data" class="tab-pane fade bg-white p10">
+		                    <h5 style="text-align:center;">Work in Progress</h5>
+		                </div>
+						</div>
+						
+                        <div class="clearfix"></div>
+						
+                        <div class="form-group">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <button type="submit" class="btn btn-success">OK</button>
+                                <button class="btn btn-primary" type="button">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="relationships" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
+                </div>
+                <div id="scheme" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
+                </div>
+                <div id="capital" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
+                </div>
+                <div id="cash_distributions" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
+                </div>
+                <div id="stock_distributions" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
+                </div>
+                <div id="portfolio" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
+                </div>
+                <div id="roles" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
+                </div>
+                <div id="snapshot" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
+                </div>
+                <div id="event" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
+                </div>
+                <div id="attachments" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
+                </div>
+            </div>
+
+        </div>
+        <!-- /page content -->
+
+      </div>
+    </div>
+
+    <div class="modal fade" id="dependant_bday" tabindex="-1" role="dialog" aria-labelledby="dependant_bday_title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="dependant_bday_title">Add Dependent & Birthday</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="form-horizontal form-label-left">
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="m_bday_name">
+                                Name
+                            </label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input type="text" id="m_bday_name" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="m_bday">
+                                Birthday
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback mbn">
+                                <input type="text" class="form-control col-md-7 col-xs-12 has-feedback-left cust_datetimepicker" id="m_bday">
+                                <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="m_contact_activity" tabindex="-1" role="dialog" aria-labelledby="m_contact_activity_title" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="m_contact_activity_title">Add Activity</h2>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>      
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap-datetimepicker -->    
+    <script src="../vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <!-- jQuery Tags Input -->
+    <script src="../vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+      <!-- Datatables -->
+      <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+      <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+      <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+      <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+      <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+      <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+      <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+      <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+      <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+      <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+      <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+      <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+      <script src="../vendors/jszip/dist/jszip.min.js"></script>
+      <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
+      <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+    <script>
+        $(function () {
+			
+            $("#menu_toggle").click();
+
+            $('.control-group .tags').tagsInput({ width: 'auto', 'defaultText': 'add here' });
+
+            $('.cust_datetimepicker').daterangepicker({
+                singleDatePicker: true,
+                singleClasses: "picker_2"
+            }, function (start, end, label) {
+                console.log(start.toISOString(), end.toISOString(), label);
+            });
+
+            $(".contact_activity").DataTable();
+
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				$("#menu_toggle").click();
+            }
+        })
+    </script>
+	
+  </body>
+</html>
