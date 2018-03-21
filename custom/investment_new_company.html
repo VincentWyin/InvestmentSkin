@@ -74,14 +74,14 @@
                             <li><a href="investor_new.html">New Investor</a></li>
                         </ul>
                     </li>
-                    <li class="active">
+                    <li>
                         <a><i class="fa fa-money"></i> Fund <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
                             <li><a href="fund_index.html">Summary Page</a></li>
                             <li><a href="fund_new.html">New Fund</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="active">
                         <a><i class="fa fa-flag-o"></i> Investment <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
                             <li><a href="investment_index.html">Summary Page</a></li>
@@ -124,7 +124,7 @@
               </div>
 
                 <div class="nav navbar-nav navbar-left hidden-xs" style="padding-top:10px;">
-                    <span class="text-primary lh40">Fund \ Add Fund</span>
+                    <span class="text-primary lh40">Investment \ Add Active Company</span>
                 </div>
 
               <ul class="nav navbar-nav navbar-right" style="width: 55%;">
@@ -221,16 +221,17 @@
 
             <ul class="nav nav-tabs">
                 <li class="active ml10"><a data-toggle="tab" href="#profile">Profile</a></li>
-                <li><a href="#relationships" data-toggle="tab">P-C RelationShips</a></li>
-                <li class="hidden-xs"><a href="#scheme" data-toggle="tab" >Ratio Schemes</a></li>
-                <li class="hidden-xs"><a href="#capital" data-toggle="tab" >Capital Calls</a></li>
-                <li class="hidden-xs"><a href="#cash_distributions" data-toggle="tab" >Cash Distributions</a></li>
-                <li class="hidden-xs"><a href="#stock_distributions" data-toggle="tab" >Stock Distributions</a></li>
-                <li class="hidden-xs"><a href="#portfolio" data-toggle="tab" >Portfolio Accounting</a></li>
+                <li><a href="#relationships" data-toggle="tab">P-C Relationships</a></li>
+                <li><a href="#deals" data-toggle="tab">Deals</a></li>
+                <li><a href="#legal" data-toggle="tab">Legal</a></li>
+                <li><a href="#instruments" data-toggle="tab">Instruments</a></li>
                 <li class="hidden-xs"><a href="#roles" data-toggle="tab">Contact Roles</a></li>
-                <li class="hidden-xs"><a href="#snapshot" data-toggle="tab" >Snapshot</a></li>
-                <li class="hidden-xs"><a href="#event" data-toggle="tab" >Event</a></li>
-                <li class="hidden-xs"><a href="#attachments" data-toggle="tab">File Attachments</a></li>
+                <li class="hidden-xs"><a href="#events" data-toggle="tab">Events</a></li>
+                <li class="hidden-xs"><a href="#expense" data-toggle="tab">Expense</a></li>
+                <li class="hidden-xs"><a href="#snapshot" data-toggle="tab">Snapshot</a></li>
+                <li class="hidden-xs"><a href="#attachments" data-toggle="tab">Attachments</a></li>
+                <li class="hidden-xs"><a href="#dd" data-toggle="tab">Due Diligence</a></li>
+                <li class="hidden-xs"><a href="#reporting" data-toggle="tab">Reporting</a></li>
             </ul>
 
             <div class="tab-content">
@@ -250,7 +251,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="full-name">
-                                                Fund Legal Name <span class="required">*</span>
+                                                Company Legal Name <span class="required">*</span>
                                             </label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
                                                 <input type="text" id="full-name" required="required" class="form-control col-md-7 col-xs-12">
@@ -258,7 +259,15 @@
                                         </div>
                                         <div class="form-group hidden-xs">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
-                                                Fund Name for Display
+                                                Deal Name
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                            </div>
+                                        </div>
+                                        <div class="form-group hidden-xs">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                                Company Id No.
                                             </label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
                                                 <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
@@ -272,12 +281,21 @@
                                                 <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
-                                        <div class="form-group hidden-xs">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
-                                                Tax Shelter ID
-                                            </label>
+                                        <div class="form-group">
+                                            <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Country of Incorporation</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                              <select class="form-control">
+                                                  <option>- Not Specified -</option>
+                                              </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="bday">
+                                                Date Founded
+                                            </label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback mbn">
+                                                <input type="text" class="form-control col-md-7 col-xs-12 has-feedback-left cust_datetimepicker" id="bday" value="01-Jan-1900">
+                                                <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
                                             </div>
                                         </div>
 										
@@ -334,7 +352,36 @@
                                               </select>
                                             </div>
                                         </div>
-
+										
+										<br/>
+										<br/>
+										
+                                        <div class="form-group hidden-xs">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                                Phone
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                            </div>
+                                        </div>
+										
+                                        <div class="form-group hidden-xs">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                                Fax
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                            </div>
+                                        </div>
+										
+                                        <div class="form-group hidden-xs">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                                Web Address
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -342,30 +389,12 @@
                             <div class="col-md-6 col-sm-6 col-xs-12 hidden-xs">
                                 <div class="x_panel">
                                     <div class="x_content">
-                                        
+										
                                         <div class="form-group">
                                             <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Category</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
                                               <select class="form-control" disabled>
-                                                  <option>Active Fund</option>
-                                              </select>
-                                            </div>
-                                        </div>
-										
-                                        <div class="form-group">
-                                            <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Fund Class</label>
-                                            <div class="col-md-9 col-sm-9 col-xs-12">
-                                              <select class="form-control">
-                                                  <option>- Not Specified -</option>
-                                              </select>
-                                            </div>
-                                        </div>
-										
-                                        <div class="form-group">
-                                            <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Fund Type</label>
-                                            <div class="col-md-9 col-sm-9 col-xs-12">
-                                              <select class="form-control">
-                                                  <option>- Not Specified -</option>
+                                                  <option>Active Company</option>
                                               </select>
                                             </div>
                                         </div>
@@ -380,19 +409,21 @@
                                         </div>
 
                                         <div class="control-group hidden-xs">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Fund Group</label>
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Investment Group</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
                                                 <input id="category" type="text" class="tags form-control" value="" />
                                             </div>
                                         </div>
 										
                                         <div class="clearfix"></div>
-										<br/>
-										<br/>
 										
-                                        <div class="form-group">
-                                            <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Local Currency</label>
-                                            <div class="col-md-6 col-sm-6 col-xs-12">
+										<br/><br/>
+
+                                        <div class="form-group hidden-xs">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                                Region
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
                                               <select class="form-control">
                                                   <option>- Not Specified -</option>
                                               </select>
@@ -401,108 +432,123 @@
 
                                         <div class="form-group hidden-xs">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
-                                                Management Company
+                                                Email
                                             </label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
-                                            </div>
-                                        </div>
-                                        <div class="form-group hidden-xs">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
-                                                General Partner
-                                            </label>
-                                            <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
-                                            </div>
-                                        </div>
-                                        <div class="form-group hidden-xs">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
-                                                Rounding Partner
-                                            </label>
-                                            <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" disabled id="web-address" required="required" class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
 										
+                                        <div class="form-group">
+                                            <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Borad Industry</label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                              <select class="form-control">
+                                                  <option>- Not Specified -</option>
+                                              </select>
+                                            </div>
+                                        </div>
+										
+                                        <div class="form-group">
+                                            <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Specific Industry</label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                              <select class="form-control">
+                                                  <option>- Not Specified -</option>
+                                              </select>
+                                            </div>
+                                        </div>
+										
+                                        <div class="form-group">
+                                            <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Investment Type</label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                              <select class="form-control">
+                                                  <option>- Not Specified -</option>
+                                              </select>
+                                            </div>
+                                        </div>
+										<div class="form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">
+                                                Business Description
+                                            </label>
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <textarea id="address" class="form-control" name="address" data-parsley-trigger="keyup"
+                                                          data-parsley-minlength="20" data-parsley-maxlength="100"
+                                                          data-parsley-validation-threshold="10"></textarea>
+                                            </div>
+                                        </div>
+										
+                                        <div class="form-group">
+                                            <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Reporting Type</label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                              <select class="form-control">
+                                                  <option>- Not Specified -</option>
+                                              </select>
+                                            </div>
+                                        </div>
+										
+                                        <div class="form-group">
+                                            <label for="job-title" class="control-label col-md-5 col-sm-5 col-xs-12">Confidentiality Agreement</label>
+                                            <div class="col-md-1 col-sm-1 col-xs-12">
+												<div class="lh40"><input type="checkbox"></div>
+                                            </div>
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="bday">
+                                                Expiry Date
+                                            </label>
+                                            <div class="col-md-3 col-sm-3 col-xs-12 form-group mbn">
+                                                <input type="text" disabled class="form-control col-md-7 col-xs-12 cust_datetimepicker" id="bday" value="">
+                                            </div>
+                                        </div>
 
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-			            <ul class="nav nav-tabs">
-			                <li class="active ml10"><a data-toggle="tab" href="#f_comment">Comment</a></li>
-			                <li><a href="#f_detail" data-toggle="tab">Detail</a></li>
-			                <li class="hidden-xs"><a href="#f_investment_focus" data-toggle="tab" >Investment Focus</a></li>
-			                <li class="hidden-xs"><a href="#f_fund_fact" data-toggle="tab" >Fund Facts</a></li>
-			                <li class="hidden-xs"><a href="#f_status" data-toggle="tab" >Status</a></li>
-			                <li class="hidden-xs"><a href="#f_custom_data" data-toggle="tab" >Custom Data</a></li>
-			            </ul>
-
-						<div style="height:200px;overflow-y:hidden;">
-		                	<div id="f_comment" class="tab-pane fade in active b bg-white p10">
-                            <div class="x_panel">
-                                <div class="x_content">
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="">
-                                                <a href="#" class="text-info"><i class="fa fa-plus"></i> Add Comment</a>
-                                            </label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Date">
-                                                Date
-                                            </label>
-                                            <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <input type="text" id="Date" class="form-control col-md-7 col-xs-12">
+                        <div class="row hidden-xs">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="x_panel">
+                                    <div class="x_content">
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="">
+                                                    <a href="#" class="text-info"><i class="fa fa-plus"></i> Add Comment</a>
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Date">
+                                                    Date
+                                                </label>
+                                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                                    <input type="text" id="Date" class="form-control col-md-7 col-xs-12">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="comment">
+                                                    Comment
+                                                </label>
+                                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                                    <textarea id="comment" class="form-control" name="comment" data-parsley-trigger="keyup"
+                                                              data-parsley-minlength="20" data-parsley-maxlength="100"
+                                                              data-parsley-validation-threshold="10"></textarea>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="comment">
-                                                Comment
-                                            </label>
-                                            <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <textarea id="comment" class="form-control" name="comment" data-parsley-trigger="keyup"
-                                                          data-parsley-minlength="20" data-parsley-maxlength="100"
-                                                          data-parsley-validation-threshold="10"></textarea>
+                                        <div class="col-md-6 col-sm-6 col-xs-12 hidden-xs">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                        <tr class="headings">
+                                                            <th class="column-title">Data</th>
+                                                            <th class="column-title">Content</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody></tbody>
+                                                </table>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-12 hidden-xs">
-                                        <div class="table-responsive">
-                                            <table class="table table-striped">
-                                                <thead>
-                                                    <tr class="headings">
-                                                        <th class="column-title">Data</th>
-                                                        <th class="column-title">Content</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody></tbody>
-                                            </table>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-		                </div>
-		                <div id="f_detail" class="tab-pane fade bg-white p10">
-		                    <h5 style="text-align:center;">Work in Progress</h5>
-		                </div>
-		                <div id="f_investment_focus" class="tab-pane fade bg-white p10">
-		                    <h5 style="text-align:center;">Work in Progress</h5>
-		                </div>
-		                <div id="f_fund_fact" class="tab-pane fade bg-white p10">
-		                    <h5 style="text-align:center;">Work in Progress</h5>
-		                </div>
-		                <div id="f_status" class="tab-pane fade bg-white p10">
-		                    <h5 style="text-align:center;">Work in Progress</h5>
-		                </div>
-		                <div id="f_custom_data" class="tab-pane fade bg-white p10">
-		                    <h5 style="text-align:center;">Work in Progress</h5>
-		                </div>
-						</div>
-						
-                        <div class="clearfix"></div>
-						
+                        </div>
+
                         <div class="form-group">
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <button type="submit" class="btn btn-success">OK</button>
@@ -514,31 +560,114 @@
                 <div id="relationships" class="tab-pane fade bg-white p10">
                     <h5 style="text-align:center;">Work in Progress</h5>
                 </div>
-                <div id="scheme" class="tab-pane fade bg-white p10">
+                <div id="deals" class="tab-pane fade bg-white p10">
+                    <div class="table-responsive">
+						<h5 class="text-primary">Prospective Deals</h5>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr class="headings">
+                                    <th></th>
+                                    <th class="column-title">Deal Type</th>
+                                    <th class="column-title">Deal Description</th>
+                                    <th class="column-title">Legal Entity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+								<tr>
+									<td></td>
+									<td>CB</td>
+									<td>10 years option 5%</td>
+									<td>T-Technology Company</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Equity</td>
+									<td>2.5% shareholdings</td>
+									<td>EFT Telecom Limited</td>
+								</tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-responsive">
+						<h5 class="text-primary">Committed Deals</h5>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr class="headings">
+                                    <th></th>
+                                    <th class="column-title">Deal Type</th>
+                                    <th class="column-title">Deal Description</th>
+                                    <th class="column-title">Legal Entity</th>
+                                    <th class="column-title">Local Currency</th>
+                                    <th class="column-title">Commitment Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+								<tr>
+									<td></td>
+									<td>CB</td>
+									<td>10 years option 5%</td>
+									<td>ABC Company</td>
+									<td>CNY</td>
+									<td>10,000,000</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Equity</td>
+									<td>1.5% shareholdings</td>
+									<td>HSBC Limited</td>
+									<td>HKD</td>
+									<td>23,000,000</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>Equity</td>
+									<td>5.5% shareholdings</td>
+									<td>China XX Bank</td>
+									<td>USD</td>
+									<td>5,000,000</td>
+								</tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-responsive">
+						<h5 class="text-primary">Referral Information</h5>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr class="headings">
+                                    <th class="column-title">Source Name</th>
+                                    <th class="column-title">Source Group/Company</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="legal" class="tab-pane fade bg-white p10">
                     <h5 style="text-align:center;">Work in Progress</h5>
                 </div>
-                <div id="capital" class="tab-pane fade bg-white p10">
-                    <h5 style="text-align:center;">Work in Progress</h5>
-                </div>
-                <div id="cash_distributions" class="tab-pane fade bg-white p10">
-                    <h5 style="text-align:center;">Work in Progress</h5>
-                </div>
-                <div id="stock_distributions" class="tab-pane fade bg-white p10">
-                    <h5 style="text-align:center;">Work in Progress</h5>
-                </div>
-                <div id="portfolio" class="tab-pane fade bg-white p10">
+                <div id="instruments" class="tab-pane fade bg-white p10">
                     <h5 style="text-align:center;">Work in Progress</h5>
                 </div>
                 <div id="roles" class="tab-pane fade bg-white p10">
                     <h5 style="text-align:center;">Work in Progress</h5>
                 </div>
+                <div id="events" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
+                </div>
+                <div id="expense" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
+                </div>
                 <div id="snapshot" class="tab-pane fade bg-white p10">
                     <h5 style="text-align:center;">Work in Progress</h5>
                 </div>
-                <div id="event" class="tab-pane fade bg-white p10">
+                <div id="attachments" class="tab-pane fade bg-white p10">
                     <h5 style="text-align:center;">Work in Progress</h5>
                 </div>
-                <div id="attachments" class="tab-pane fade bg-white p10">
+                <div id="dd" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
+                </div>
+                <div id="reporting" class="tab-pane fade bg-white p10">
                     <h5 style="text-align:center;">Work in Progress</h5>
                 </div>
             </div>
