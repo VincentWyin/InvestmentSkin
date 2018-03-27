@@ -39,8 +39,8 @@
             	<script>
     				$("#_menu").load("partialView/_menu.html");
     			</script>
-		  </div>
-
+          </div>
+		  
         <!-- top navigation -->
         <div class="top_nav">
           <div class="nav_menu">
@@ -50,15 +50,14 @@
               </div>
 
                 <div class="nav navbar-nav navbar-left hidden-xs" style="padding-top:10px;">
-                    <span class="text-primary lh40">Investor \ Add Investor</span>
+                    <span class="text-primary lh40">Fund \ Add Prospective Fund</span>
                 </div>
 					
-				<ul class="nav navbar-nav navbar-right" style="width: 55%;" id="_top_nav">
-		        	<script>
-		                $("#_top_nav").load("partialView/_top_nav.html");
-	 				</script>
-				</ul>
-
+					<ul class="nav navbar-nav navbar-right" style="width: 55%;" id="_top_nav">
+			        	<script>
+			                $("#_top_nav").load("partialView/_top_nav.html");
+		 				</script>
+					</ul>	
             </nav>
           </div>
         </div>
@@ -70,36 +69,52 @@
             <ul class="nav nav-tabs">
                 <li class="active ml10"><a data-toggle="tab" href="#profile">Profile</a></li>
                 <li><a href="#relationships" data-toggle="tab">P-C RelationShips</a></li>
-                <li class="hidden-xs"><a href="#summary" data-toggle="tab" >Summary</a></li>
+                <li class="hidden-xs"><a href="#scheme" data-toggle="tab" >Ratio Schemes</a></li>
+                <li class="hidden-xs"><a href="#capital" data-toggle="tab" >Capital Calls</a></li>
+                <li class="hidden-xs"><a href="#cash_distributions" data-toggle="tab" >Cash Distributions</a></li>
+                <li class="hidden-xs"><a href="#stock_distributions" data-toggle="tab" >Stock Distributions</a></li>
+                <li class="hidden-xs"><a href="#portfolio" data-toggle="tab" >Portfolio Accounting</a></li>
                 <li class="hidden-xs"><a href="#roles" data-toggle="tab">Contact Roles</a></li>
+                <li class="hidden-xs"><a href="#snapshot" data-toggle="tab" >Snapshot</a></li>
+                <li class="hidden-xs"><a href="#event" data-toggle="tab" >Event</a></li>
                 <li class="hidden-xs"><a href="#attachments" data-toggle="tab">File Attachments</a></li>
             </ul>
 
             <div class="tab-content">
                 <div id="profile" class="tab-pane fade in active bg-white p10">
 		        	<script>
-						$("#profile").load("partialView/investor/_profile.html");
+						$("#profile").load("partialView/fund/_profile_prospective.html");
 	 				</script>
                 </div>
                 <div id="relationships" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#relationships").load("partialView/investor/_relationships.html");
-	 				</script>
+                    <h5 style="text-align:center;">Work in Progress</h5>
                 </div>
-                <div id="summary" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#summary").load("partialView/investor/_summary.html");
-	 				</script>
+                <div id="scheme" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
+                </div>
+                <div id="capital" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
+                </div>
+                <div id="cash_distributions" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
+                </div>
+                <div id="stock_distributions" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
+                </div>
+                <div id="portfolio" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
                 </div>
                 <div id="roles" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#roles").load("partialView/investor/_roles.html");
-	 				</script>
+                    <h5 style="text-align:center;">Work in Progress</h5>
+                </div>
+                <div id="snapshot" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
+                </div>
+                <div id="event" class="tab-pane fade bg-white p10">
+                    <h5 style="text-align:center;">Work in Progress</h5>
                 </div>
                 <div id="attachments" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#attachments").load("partialView/investor/_attachments.html");
-	 				</script>
+                    <h5 style="text-align:center;">Work in Progress</h5>
                 </div>
             </div>
 
@@ -202,7 +217,6 @@
 
     <script>
         $(function () {
-			
             $('.control-group .tags').tagsInput({ width: 'auto', 'defaultText': 'add here' });
 
             $('.cust_datetimepicker').daterangepicker({
@@ -213,7 +227,6 @@
             });
 
             $(".contact_activity").DataTable();
-
         })
     </script>
 	

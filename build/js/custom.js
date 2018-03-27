@@ -53,6 +53,8 @@ var CURRENT_URL = window.location.href.split('#')[0].split('?')[0],
 	
 // Sidebar
 function init_sidebar() {
+
+	console.log('init_sidebar');
 // TODO: This is some kind of easy fix, maybe we can improve this
 var setContentHeight = function () {
 	// reset height
@@ -68,8 +70,8 @@ var setContentHeight = function () {
 
 	$RIGHT_COL.css('min-height', contentHeight);
 };
-
-  $SIDEBAR_MENU.find('a').on('click', function(ev) {
+$(document.body).on('click', "#sidebar-menu a", function(ev){
+  //$SIDEBAR_MENU.find('a').on('click', function(ev) {
 	  console.log('clicked - sidebar_menu');
         var $li = $(this).parent();
 
@@ -118,6 +120,7 @@ $MENU_TOGGLE.on('click', function() {
 	$('.dataTable').each ( function () { $(this).dataTable().fnDraw(); });
 });
 
+CURRENT_URL = CURRENT_URL.split("/").pop();
 	// check active menu
 	$SIDEBAR_MENU.find('a[href="' + CURRENT_URL + '"]').parent('li').addClass('current-page');
 
@@ -5005,7 +5008,8 @@ if (typeof NProgress != 'undefined') {
 	   
 	   
 	$(document).ready(function() {
-				
+
+
 		init_sparklines();
 		init_flot_chart();
 		init_sidebar();

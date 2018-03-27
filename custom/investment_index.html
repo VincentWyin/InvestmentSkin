@@ -27,6 +27,8 @@
 
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
   </head>
 
   <body class="nav-md">
@@ -35,87 +37,11 @@
 		
       <div class="main_container">
 		  
-        <div class="col-md-3 left_col">
-          <div class="left_col scroll-view">
-            <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>System Name Here</span></a>
-            </div>
-
-            <div class="clearfix"></div>
-
-            <!-- menu profile quick info -->
-            <div class="profile clearfix">
-              <div class="profile_pic">
-                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
-              </div>
-              <div class="profile_info">
-                <span>Welcome,</span>
-                <h2>User xxx</h2>
-              </div>
-            </div>
-            <!-- /menu profile quick info -->
-
-            <br />
-
-            <!-- sidebar menu -->
-            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-              <div class="menu_section">
-                <h3>General</h3>
-                <ul class="nav side-menu">
-                    <li>
-                        <a><i class="fa fa-user"></i> Contact <span class="fa fa-chevron-down"></span></a>
-                        <ul class="nav child_menu">
-                            <li><a href="contact_index.html">List Page</a></li>
-                            <li><a href="contact_new_person.html">New Person</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a><i class="fa fa-bank"></i> Investor <span class="fa fa-chevron-down"></span></a>
-                        <ul class="nav child_menu">
-                            <li><a href="investor_index.html">Summary Page</a></li>
-                            <li><a href="investor_new.html">New Investor</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a><i class="fa fa-money"></i> Fund <span class="fa fa-chevron-down"></span></a>
-                        <ul class="nav child_menu">
-                            <li><a href="fund_index.html">Summary Page</a></li>
-                            <li><a href="fund_new.html">New Fund</a></li>
-                        </ul>
-                    </li>
-                    <li class="active">
-                        <a><i class="fa fa-flag-o"></i> Investment <span class="fa fa-chevron-down"></span></a>
-                        <ul class="nav child_menu">
-                            <li><a href="investment_index.html">Summary Page</a></li>
-							<li><a href="investment_new_company.html">New Active Company</a></li>
-                            <li><a href="investment_new_LP_interest.html">New LP Interest</a></li>
-                        </ul>
-                    </li>
-                    <li><a><i class="fa fa-dashboard"></i> Performance Analysis</a></li>
-                </ul>
-              </div>
-
-            </div>
-            <!-- /sidebar menu -->
-
-            <!-- /menu footer buttons -->
-            <div class="sidebar-footer hidden-small">
-              <a data-toggle="tooltip" data-placement="top" title="Settings">
-                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
-                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="Lock">
-                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-              </a>
-              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
-                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-              </a>
-            </div>
-            <!-- /menu footer buttons -->
+          <div class="col-md-3 left_col" id="_menu">
+            	<script>
+    				$("#_menu").load("partialView/_menu.html");
+    			</script>
           </div>
-        </div>
 
         <!-- top navigation -->
         <div class="top_nav">
@@ -128,91 +54,12 @@
                 <div class="nav navbar-nav navbar-left hidden-xs" style="padding-top:10px;">
                     <span class="text-primary lh40">Investment \ Summary</span>
                 </div>
-
-              <ul class="nav navbar-nav navbar-right" style="width: 55%;">
-                <li class="">
-                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    User xxxx
-                    <span class=" fa fa-angle-down"></span>
-                  </a>
-                  <ul class="dropdown-menu dropdown-usermenu pull-right">
-                    <li><a href="javascript:;"> Profile</a></li>
-                    <li>
-                      <a href="javascript:;">
-                        <span class="badge bg-red pull-right">50%</span>
-                        <span>Settings</span>
-                      </a>
-                    </li>
-                    <li><a href="javascript:;">Help</a></li>
-                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
-                  </ul>
-                </li>
-
-                <li role="presentation" class="dropdown">
-                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-envelope-o"></i>
-                    <span class="badge bg-green">6</span>
-                  </a>
-                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
-                    <li>
-                      <a>
-                        <span class="image"></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                        <span>
-                          <span>John Smith</span>
-                          <span class="time">3 mins ago</span>
-                        </span>
-                        <span class="message">
-                          Film festivals used to be do-or-die moments for movie makers. They were where...
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <div class="text-center">
-                        <a>
-                          <strong>See All Alerts</strong>
-                          <i class="fa fa-angle-right"></i>
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+					
+				<ul class="nav navbar-nav navbar-right" style="width: 55%;" id="_top_nav">
+		        	<script>
+		                $("#_top_nav").load("partialView/_top_nav.html");
+	 				</script>
+				</ul>	
             </nav>
           </div>
         </div>
@@ -310,6 +157,7 @@
 		  	                      </table>
 								</div>
 								<div class="col-xl-4 col-md-4 col-sm-4 col-xs-12">
+									<canvas id="pie-chart"  width="200" height="200"></canvas>
 								</div>
 							</div>
 						</div>
@@ -360,12 +208,11 @@
 
 		</div>
         <!-- /page content -->
+
 		
       </div>
     </div>
 
-    <!-- jQuery -->
-    <script src="../vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- FastClick -->
@@ -401,20 +248,35 @@
     <!-- bootstrap-daterangepicker -->
     <script src="../vendors/moment/min/moment.min.js"></script>
     <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-	
+
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.js"></script>
+	
+	<!-- Custom Scripts by Vincent -->
+    <script src="../build/js/my_custom.js"></script>
 
-    <script>
-        $(function () {
-            $("#menu_toggle").click();
-
-            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-                $("#search_title .collapse-link").click();
-				$("#menu_toggle").click();
-            }
-        })
-    </script>
+	<script>
+		$(function(){
+			new Chart(document.getElementById("pie-chart"), {
+			    type: 'pie',
+			    data: {
+			      labels: ["Prospective Company", "Active Company", "Disposed Company", "Dead Company"],
+			      datasets: [{
+			        label: "Percentage",
+			        backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9"],
+			        data: [30,35,20,15]
+			      }]
+			    },
+			    options: {
+			      title: {
+			        display: true,
+			        text: 'Percentage By Investment Type'
+			      }
+			    }
+			});
+		});
+	</script>
 	
   </body>
 </html>
