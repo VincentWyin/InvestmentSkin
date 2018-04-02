@@ -1,2 +1,157 @@
 
-                    <h5 style="text-align:center;">Work in Progress</h5>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr class="headings">
+                <th>&nbsp;</th>
+                <th class="column-title">Expense Date</th>
+                <th class="column-title">Category</th>
+                <th class="column-title">Vendor</th>
+                <th class="column-title">Invoice Number</th>
+                <th class="column-title">Project Name</th>
+            </tr>
+        </thead>
+        <tbody>
+			<tr style="height:100px;">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+        </tbody>
+    </table>
+</div>
+
+<form class="form-horizontal form-label-left">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="x_panel">
+				<div class="x_content">
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Date">
+                            Project Name
+                        </label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input type="text" id="Date" class="form-control col-md-7 col-xs-12">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Date">
+                            Project Number
+                        </label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input type="text" id="Date" class="form-control col-md-7 col-xs-12">
+                        </div>
+                    </div>
+					<div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="spouse_bday">
+                            Expense Date
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback mbn">
+                            <input type="text" class="form-control col-md-7 col-xs-12 has-feedback-left cust_datetimepicker" id="spouse_bday">
+                            <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-type" class="control-label col-md-3 col-sm-3 col-xs-12">Category</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <select class="form-control" id="contact-type">
+                                <option>- Not Specified -</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Date">
+                            Vendor
+                        </label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input type="text" id="Date" class="form-control col-md-7 col-xs-12">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Date">
+                            Invoice Number
+                        </label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input type="text" id="Date" class="form-control col-md-7 col-xs-12">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-type" class="control-label col-md-3 col-sm-3 col-xs-12">Expense Status</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <select class="form-control" id="contact-type">
+                                <option>- Not Specified -</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-type" class="control-label col-md-3 col-sm-3 col-xs-12">Reimbursable Category</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <select class="form-control" id="contact-type">
+                                <option>- Not Specified -</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="comment">
+                            Note
+                        </label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <textarea id="comment" class="form-control" name="comment" data-parsley-trigger="keyup"
+                                      data-parsley-minlength="20" data-parsley-maxlength="100"
+                                      data-parsley-validation-threshold="10"></textarea>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="x_panel">
+				<div class="x_content">
+                    <div class="form-group">
+                        <label for="contact-type" class="control-label col-md-6 col-sm-6 col-xs-12">Local Currency of Expense</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <select class="form-control" id="contact-type">
+                                <option>- Not Specified -</option>
+                            </select>
+                        </div>
+                    </div>
+					<h5 style="margin-top:20px;">Exchange Rates (Note: [Target] = [Local] / [Rate])</h5>
+					<div class="table-responsive">
+					    <table class="table table-striped">
+					        <thead>
+					            <tr class="headings">
+					                <th>&nbsp;</th>
+					                <th class="column-title">Fixed</th>
+					                <th class="column-title">Date</th>
+					                <th class="column-title">Local Currency</th>
+					                <th class="column-title">Target Currency</th>
+					                <th class="column-title">Rate</th>
+					            </tr>
+					        </thead>
+					        <tbody>
+								<tr style="height:100px;">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+					        </tbody>
+					    </table>
+					</div>
+					<div>Amount:</div>
+					<div>Amount(USD):</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

@@ -10,7 +10,7 @@ $(function () {
     	console.log('reset current page');
 	setTimeout(function(){
 		var URL = window.location.href.split('#')[0].split('?')[0].split("/").pop();
-		$("#_menu").find('a[href="' + URL + '"]').parent('li').addClass('current-page').parent("ul").parent("li").addClass("active");
+		$("#_menu").find('a[href="' + URL + '"]').parent('li').addClass('current-page').parent("ul").siblings("a").click();
 	},1000);
     }
 })
