@@ -65,7 +65,7 @@
 
         <!-- page content -->
         <div class="right_col" role="main">
-
+        <div id="tab_bable">
             <ul class="nav nav-tabs">
                 <li class="active ml10"><a data-toggle="tab" href="#profile">Profile</a></li>
                 <li><a href="#relationships" data-toggle="tab">P-C Relationships</a></li>
@@ -80,6 +80,7 @@
                 <li class="hidden-xs"><a href="#dd" data-toggle="tab">Due Diligence</a></li>
                 <li class="hidden-xs"><a href="#reporting" data-toggle="tab">Reporting</a></li>
             </ul>
+		</div>
 
             <div class="tab-content">
                 <div id="profile" class="tab-pane fade in active bg-white p10">
@@ -133,6 +134,14 @@
                                             <div class="col-md-9 col-sm-9 col-xs-12">
                                               <select class="form-control">
                                                   <option>- Not Specified -</option>
+                                                  <option>China</option>
+                                                  <option>Hong Kong S.A.R.</option>
+                                                  <option>Japan</option>
+                                                  <option>Malaysia</option>
+                                                  <option>Singapore</option>
+                                                  <option>Taiwan</option>
+                                                  <option>United Kingdom</option>
+                                                  <option>USA</option>
                                               </select>
                                             </div>
                                         </div>
@@ -251,6 +260,11 @@
                                             <div class="col-md-9 col-sm-9 col-xs-12">
                                               <select class="form-control">
                                                   <option>- Not Specified -</option>
+                                                  <option>Contact</option>
+                                                  <option>Investor</option>
+                                                  <option>Fund</option>
+                                                  <option>Investment</option>
+                                                  <option>Parent-Child Relationship</option>
                                               </select>
                                             </div>
                                         </div>
@@ -273,6 +287,12 @@
                                             <div class="col-md-9 col-sm-9 col-xs-12">
                                               <select class="form-control">
                                                   <option>- Not Specified -</option>
+                                                  <option>Africa</option>
+                                                  <option>Asia Pacific</option>
+                                                  <option>Europe</option>
+                                                  <option>Middle East</option>
+                                                  <option>North America</option>
+                                                  <option>South America</option>
                                               </select>
                                             </div>
                                         </div>
@@ -573,6 +593,7 @@
             });
 
             $(".contact_activity").DataTable();
+			
 
         })
     </script>
