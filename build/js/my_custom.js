@@ -13,4 +13,15 @@ $(function () {
 		    $("#_menu").find('a[href="' + URL + '"]').parent('li').addClass('current-page').parent("ul").siblings("a").click();
 	    },1000);
     }
+	
+	
+    $('.control-group .tags').tagsInput({ width: 'auto', 'defaultText': 'add here' });
+
+    $('.cust_datetimepicker').daterangepicker({
+        singleDatePicker: true,
+        singleClasses: "picker_2"
+    }, function (start, end, label) {
+        console.log(start.toISOString(), end.toISOString(), label);
+    });
+	
 })

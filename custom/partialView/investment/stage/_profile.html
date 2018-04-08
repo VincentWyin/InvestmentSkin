@@ -1,89 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>System Name Here</title>
-
-    <!-- Bootstrap -->
-    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <!-- NProgress -->
-    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
-    <!-- iCheck -->
-    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
-    <!-- bootstrap-progressbar -->
-    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
-    <!-- PNotify -->
-    <link href="../vendors/pnotify/dist/pnotify.css" rel="stylesheet">
-    <link href="../vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
-    <link href="../vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
-
-    <!-- Custom Theme Style -->
-    <link href="../build/css/custom.css" rel="stylesheet">
-    <!-- jQuery -->
-    <script src="../vendors/jquery/dist/jquery.min.js"></script>
-  </head>
-
-  <body class="nav-md">
-    <div class="container body">
-      <div class="main_container">
-		  
-          <div class="col-md-3 left_col" id="_menu">
-            	<script>
-    				$("#_menu").load("partialView/_menu.html");
-    			</script>
-          </div>
-
-        <!-- top navigation -->
-        <div class="top_nav">
-          <div class="nav_menu">
-            <nav>
-              <div class="nav toggle">
-                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
-              </div>
-
-                <div class="nav navbar-nav navbar-left hidden-xs" style="padding-top:10px;">
-                    <span class="text-primary lh40">Investment \ Add Active Company</span>
-                </div>
-					
-				<ul class="nav navbar-nav navbar-right" style="width: 55%;" id="_top_nav">
-		        	<script>
-		                $("#_top_nav").load("partialView/_top_nav.html");
-	 				</script>
-				</ul>	
-            </nav>
-          </div>
-        </div>
-        <!-- /top navigation -->
-
-        <!-- page content -->
-        <div class="right_col" role="main">
-        <div id="tab_bable">
-            <ul class="nav nav-tabs">
-                <li class="active ml10"><a data-toggle="tab" href="#profile">Profile</a></li>
-                <li><a href="#relationships" data-toggle="tab">P-C Relationships</a></li>
-                <li><a href="#deals" data-toggle="tab">Deals</a></li>
-                <li><a href="#legal" data-toggle="tab">Legal</a></li>
-                <li><a href="#instruments" data-toggle="tab">Instruments</a></li>
-                <li class="hidden-xs"><a href="#roles" data-toggle="tab">Contact Roles</a></li>
-                <li class="hidden-xs"><a href="#events" data-toggle="tab">Events</a></li>
-                <li class="hidden-xs"><a href="#expense" data-toggle="tab">Expense</a></li>
-                <li class="hidden-xs"><a href="#snapshot" data-toggle="tab">Snapshot</a></li>
-                <li class="hidden-xs"><a href="#attachments" data-toggle="tab">Attachments</a></li>
-                <li class="hidden-xs"><a href="#dd" data-toggle="tab">Due Diligence</a></li>
-                <li class="hidden-xs"><a href="#reporting" data-toggle="tab">Reporting</a></li>
-            </ul>
-		</div>
-
-            <div class="tab-content">
-                <div id="profile" class="tab-pane fade in active bg-white p10">
                     <form id="contact-form-general" data-parsley-validate class="form-horizontal form-label-left">
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-xs-12">
@@ -94,7 +8,7 @@
                                                 Ref. No.
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                                <input type="text" name="reference-numnber" disabled class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="reference-numnber" disabled class="form-control col-md-7 col-xs-12" value="110804801441084">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -102,7 +16,7 @@
                                                 Company Legal Name <span class="required">*</span>
                                             </label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <input type="text" id="full-name" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="company-legal-name" required="required" class="form-control col-md-7 col-xs-12" value="大米科技有限责任公司">
                                             </div>
                                         </div>
                                         <div class="form-group hidden-xs">
@@ -110,7 +24,7 @@
                                                 Deal Name
                                             </label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="deal-name" required="required" class="form-control col-md-7 col-xs-12" value="大米科技有限责任公司">
                                             </div>
                                         </div>
                                         <div class="form-group hidden-xs">
@@ -118,7 +32,7 @@
                                                 Company Id No.
                                             </label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="company-id-no" required="required" class="form-control col-md-7 col-xs-12" value="110804801441084">
                                             </div>
                                         </div>
                                         <div class="form-group hidden-xs">
@@ -126,15 +40,15 @@
                                                 Tax ID
                                             </label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="tax-id" required="required" class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Country of Incorporation</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                              <select class="form-control">
+                                              <select class="form-control" id="profile-country-incorporation">
                                                   <option>- Not Specified -</option>
-                                                  <option>China</option>
+                                                  <option selected>China</option>
                                                   <option>Hong Kong S.A.R.</option>
                                                   <option>Japan</option>
                                                   <option>Malaysia</option>
@@ -146,11 +60,11 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="bday">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="date-founded">
                                                 Date Founded
                                             </label>
                                             <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback mbn">
-                                                <input type="text" class="form-control col-md-7 col-xs-12 has-feedback-left cust_datetimepicker" id="bday" value="01-Jan-1900">
+                                                <input type="text" class="form-control col-md-7 col-xs-12 has-feedback-left cust_datetimepicker" id="date-founded" name="date-founded" value="03-03-2010">
                                                 <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
                                             </div>
                                         </div>
@@ -163,41 +77,40 @@
                                                 Address
                                             </label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <textarea id="address" class="form-control" name="address" data-parsley-trigger="keyup"
-                                                          data-parsley-minlength="20" data-parsley-maxlength="100"
-                                                          data-parsley-validation-threshold="10"></textarea>
+                                                <textarea id="address" class="form-control" name="address" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-validation-threshold="10">清河中街68号华润中心三期5层
+海淀区</textarea>
                                             </div>
                                         </div>
                                         <div class="form-group hidden-xs">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="profile-city">
                                                 City
                                             </label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="profile-city" class="form-control col-md-7 col-xs-12" value="北京市">
                                             </div>
                                         </div>
                                         <div class="form-group hidden-xs">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="profile-state">
                                                 State/Province
                                             </label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="profile-state" class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
                                         <div class="form-group hidden-xs">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="profile-zip">
                                                 Zip/Postal Code
                                             </label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="profile-zip" class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Country</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                              <select class="form-control">
+                                              <select class="form-control" id="profile-country">
                                                   <option>- Not Specified -</option>
-                                                  <option>China</option>
+                                                  <option selected>China</option>
                                                   <option>Hong Kong S.A.R.</option>
                                                   <option>Japan</option>
                                                   <option>Malaysia</option>
@@ -213,29 +126,29 @@
 										<br/>
 										
                                         <div class="form-group hidden-xs">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="profile-phone">
                                                 Phone
                                             </label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="profile-phone" class="form-control col-md-7 col-xs-12" value="86-010-60607767">
                                             </div>
                                         </div>
 										
                                         <div class="form-group hidden-xs">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="profile-fax">
                                                 Fax
                                             </label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="profile-fax" class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
 										
                                         <div class="form-group hidden-xs">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="profile-web-address">
                                                 Web Address
                                             </label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" id="profile-web-address" class="form-control col-md-7 col-xs-12" value="http://www.bigmi.com">
                                             </div>
                                         </div>
                                     </div>
@@ -258,8 +171,9 @@
                                         <div class="form-group">
                                             <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Entity Type</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                              <select class="form-control">
+                                              <select class="form-control" id="profile-entity-type">
                                                   <option>- Not Specified -</option>
+                                                  <option selected>Direct Company</option>
                                                   <option>Contact</option>
                                                   <option>Investor</option>
                                                   <option>Fund</option>
@@ -272,7 +186,7 @@
                                         <div class="control-group hidden-xs">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Investment Group</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <input id="category" type="text" class="tags form-control" value="" />
+                                                <input id="profile-investment-group" type="text" class="tags form-control" value="" />
                                             </div>
                                         </div>
 										
@@ -285,10 +199,10 @@
                                                 Region
                                             </label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                              <select class="form-control">
+                                              <select class="form-control" id="profile-region">
                                                   <option>- Not Specified -</option>
                                                   <option>Africa</option>
-                                                  <option>Asia Pacific</option>
+                                                  <option selected>Asia Pacific</option>
                                                   <option>Europe</option>
                                                   <option>Middle East</option>
                                                   <option>North America</option>
@@ -298,37 +212,40 @@
                                         </div>
 
                                         <div class="form-group hidden-xs">
-                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="profile-email">
                                                 Email
                                             </label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <input type="text" disabled id="web-address" required="required" class="form-control col-md-7 col-xs-12">
+                                                <input type="text" disabled id="profile-email" class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
 										
                                         <div class="form-group">
-                                            <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Borad Industry</label>
+                                            <label for="profile-bindustry" class="control-label col-md-3 col-sm-3 col-xs-12">Borad Industry</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                              <select class="form-control">
+                                              <select class="form-control" id="profile-bindustry">
                                                   <option>- Not Specified -</option>
+												  <option selected>Consumer</option>
                                               </select>
                                             </div>
                                         </div>
 										
                                         <div class="form-group">
-                                            <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Specific Industry</label>
+                                            <label for="profile-sindustry" class="control-label col-md-3 col-sm-3 col-xs-12">Specific Industry</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                              <select class="form-control">
+                                              <select class="form-control" id="profile-sindustry">
                                                   <option>- Not Specified -</option>
+												  <option selected>Technology</option>
                                               </select>
                                             </div>
                                         </div>
 										
                                         <div class="form-group">
-                                            <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Investment Type</label>
+                                            <label for="profile-investment-type" class="control-label col-md-3 col-sm-3 col-xs-12">Investment Type</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                              <select class="form-control">
+                                              <select class="form-control" id="profile-investment-type">
                                                   <option>- Not Specified -</option>
+												  <option selected>Venture</option>
                                               </select>
                                             </div>
                                         </div>
@@ -337,31 +254,33 @@
                                                 Business Description
                                             </label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                                <textarea id="address" class="form-control" name="address" data-parsley-trigger="keyup"
-                                                          data-parsley-minlength="20" data-parsley-maxlength="100"
-                                                          data-parsley-validation-threshold="10"></textarea>
+                                                <textarea id="address" class="form-control" name="profile-description" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-validation-threshold="10">手机技术开发；手机生产、手机服务；从事互联网文化活动；技术开发；货物进出口、技术进出口、代理进出口；销售通讯设备；维修仪器仪表；维修办公设备。</textarea>
                                             </div>
                                         </div>
 										
                                         <div class="form-group">
-                                            <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Reporting Type</label>
+                                            <label for="profile-reporting-type" class="control-label col-md-3 col-sm-3 col-xs-12">Reporting Type</label>
                                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                              <select class="form-control">
+                                              <select class="form-control" id="profile-reporting-type">
                                                   <option>- Not Specified -</option>
+												  <option selected>Public</option>
                                               </select>
                                             </div>
                                         </div>
 										
                                         <div class="form-group">
-                                            <label for="job-title" class="control-label col-md-5 col-sm-5 col-xs-12">Confidentiality Agreement</label>
-                                            <div class="col-md-1 col-sm-1 col-xs-12">
-												<div class="lh40"><input type="checkbox"></div>
+                                            <label for="job-title" class="control-label col-md-3 col-sm-3 col-xs-12">Confidentiality Agreement</label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+												<div class="lh40"><input type="checkbox" checked></div>
                                             </div>
+                                        </div>
+										
+                                        <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="bday">
                                                 Expiry Date
                                             </label>
-                                            <div class="col-md-3 col-sm-3 col-xs-12 form-group mbn">
-                                                <input type="text" disabled class="form-control col-md-7 col-xs-12 cust_datetimepicker" id="bday" value="">
+                                            <div class="col-md-9 col-sm-9 col-xs-12 form-group mbn">
+                                                <input type="text" disabled class="form-control col-md-7 col-xs-12 cust_datetimepicker" id="bday" value="12/31/2018">
                                             </div>
                                         </div>
 
@@ -423,180 +342,3 @@
                             </div>
                         </div>
                     </form>
-                </div>
-                <div id="relationships" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#relationships").load("partialView/investment/_relationships.html");
-	 				</script>
-                </div>
-                <div id="deals" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#deals").load("partialView/investment/_deals.html");
-	 				</script>
-                </div>
-                <div id="legal" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#legal").load("partialView/investment/_legal.html");
-	 				</script>
-                </div>
-                <div id="instruments" class="tab-pane fade bg-white p10">
-					<script>
-						$("#instruments").load("partialView/investment/_instruments.html");
-	 				</script>
-                </div>
-                <div id="roles" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#roles").load("partialView/investment/_roles.html");
-	 				</script>
-                </div>
-                <div id="events" class="tab-pane fade bg-white p10">
-					<script>
-						$("#events").load("partialView/investment/_events.html");
-	 				</script>
-                </div>
-                <div id="expense" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#expense").load("partialView/investment/_expense.html");
-	 				</script>
-                </div>
-                <div id="snapshot" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#snapshot").load("partialView/investment/_snapshot.html");
-	 				</script>
-                </div>
-                <div id="attachments" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#attachments").load("partialView/investment/_attachments.html");
-	 				</script>
-                </div>
-                <div id="dd" class="tab-pane fade bg-white p10">
-					<script>
-						$("#dd").load("partialView/investment/_dd.html");
-	 				</script>
-                </div>
-                <div id="reporting" class="tab-pane fade bg-white p10">
-					<script>
-						$("#reporting").load("partialView/investment/_reporting.html");
-	 				</script>
-                </div>
-            </div>
-
-        </div>
-        <!-- /page content -->
-
-      </div>
-    </div>
-
-    <div class="modal fade" id="dependant_bday" tabindex="-1" role="dialog" aria-labelledby="dependant_bday_title" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="modal-title" id="dependant_bday_title">Add Dependent & Birthday</h2>
-                </div>
-                <div class="modal-body">
-                    <div class="form-horizontal form-label-left">
-                        <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="m_bday_name">
-                                Name
-                            </label>
-                            <div class="col-md-9 col-sm-9 col-xs-12">
-                                <input type="text" id="m_bday_name" class="form-control col-md-7 col-xs-12">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="m_bday">
-                                Birthday
-                            </label>
-                            <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback mbn">
-                                <input type="text" class="form-control col-md-7 col-xs-12 has-feedback-left cust_datetimepicker" id="m_bday">
-                                <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="m_contact_activity" tabindex="-1" role="dialog" aria-labelledby="m_contact_activity_title" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="modal-title" id="m_contact_activity_title">Add Activity</h2>
-                </div>
-                <div class="modal-body">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- jQuery -->
-    <script src="../vendors/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>      
-    <!-- FastClick -->
-    <script src="../vendors/fastclick/lib/fastclick.js"></script>
-    <!-- NProgress -->
-    <script src="../vendors/nprogress/nprogress.js"></script>
-    <!-- bootstrap-progressbar -->
-    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
-    <!-- iCheck -->
-    <script src="../vendors/iCheck/icheck.min.js"></script>
-    <!-- bootstrap-daterangepicker -->
-    <script src="../vendors/moment/min/moment.min.js"></script>
-    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-    <!-- bootstrap-datetimepicker -->    
-    <script src="../vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-    <!-- jQuery Tags Input -->
-    <script src="../vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
-      <!-- Datatables -->
-      <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
-      <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-      <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-      <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
-      <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
-      <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
-      <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
-      <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
-      <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
-      <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-      <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
-      <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
-      <script src="../vendors/jszip/dist/jszip.min.js"></script>
-      <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
-      <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
-
-    <!-- Custom Theme Scripts -->
-    <script src="../build/js/custom.js"></script>
-	
-	<!-- Custom Scripts by Vincent -->
-    <script src="../build/js/my_custom.js"></script>
-
-    <script>
-        $(function () {
-			
-            $('.control-group .tags').tagsInput({ width: 'auto', 'defaultText': 'add here' });
-
-            $('.cust_datetimepicker').daterangepicker({
-                singleDatePicker: true,
-                singleClasses: "picker_2"
-            }, function (start, end, label) {
-                console.log(start.toISOString(), end.toISOString(), label);
-            });
-
-            $(".contact_activity").DataTable();
-			
-
-        })
-    </script>
-	
-  </body>
-</html>
