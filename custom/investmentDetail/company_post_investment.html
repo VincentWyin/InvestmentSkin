@@ -71,7 +71,11 @@
 				<div class="col-md-8 col-xs-12">
 					<div class="x_panel">
 						<div class="x_content">
-							<h3>大米科技有限责任公司 <span class="fs12">[110804801441084]</span></h3>
+							<h3>
+								大米科技有限责任公司 
+								<span class="fs12">[110804801441084]</span>
+								<a href="#chart" data-toggle="modal" class="fs12 ml10">chart</a>
+							</h3>
 							<div>
 	                            <span class="label label-primary">China</span>
 	                            <span class="label label-primary">Venture</span>
@@ -87,10 +91,10 @@
 					<div class="x_panel">
 						<div class="x_content pbn mtn">
 							current stage: <br />
-							<div class="mb10 fs20"><b>Draft</b></div>
+							<div class="mb10 fs20"><b>Post-Investment</b></div>
 							Next stage:  <br />
-							<b class="fs20">In Progress</b>  <br />
-							<a href="company_inprogress.html" class="mt10 btn btn-primary btn-sm mt5">Go to Next Stage</a>
+							<b class="fs20">Complete</b>  <br />
+							<a href="javascript:alert('Investment Completed!');" class="mt10 btn btn-primary btn-sm mt5">Go to Next Stage</a>
 						</div>
 					</div>
 				</div>
@@ -101,18 +105,23 @@
 		        <ul class="nav nav-tabs">
 		            <li><a href="#progress" data-toggle="tab" class="ml10">Progress</a></li>
 		            <li class="active"><a data-toggle="tab" href="#profile">Profile</a></li>
-		            <li class="hidden-xs hidden"><a href="#legal" data-toggle="tab">Legal</a></li>
-		            <li class="hidden-xs"><a href="#events" data-toggle="tab">Events</a></li>
-		            <li class="hidden-xs hidden"><a href="#instruments" data-toggle="tab">Instruments</a></li>
-		            <li class="hidden-xs hidden"><a href="#deals" data-toggle="tab">Deals</a></li>
-		            <li class="hidden-xs hidden"><a href="#roles" data-toggle="tab">Contact Roles</a></li>
-		            <li class="hidden-xs hidden"><a href="#expense" data-toggle="tab">Expense</a></li>
-		            <li class="hidden-xs hidden"><a href="#snapshot" data-toggle="tab">Snapshot</a></li>
+		            <li class=""><a href="#legal" data-toggle="tab">Legal</a></li>
+		            <li class=""><a href="#events" data-toggle="tab">Events</a></li>
+		            <li class="hidden-xs"><a href="#instruments" data-toggle="tab">Instruments</a></li>
+		            <li class=""><a href="#deals" data-toggle="tab">Deals</a></li>
 		            <li class="hidden-xs"><a href="#attachments" data-toggle="tab">Attachments</a></li>
-		            <li class="hidden-xs hidden"><a href="#dd" data-toggle="tab">Due Diligence</a></li>
-		            <li class="hidden-xs hidden"><a href="#reporting" data-toggle="tab">Reporting</a></li>
-		            <li class="hidden"><a href="#relationships" data-toggle="tab">P-C Relationships</a></li>
-		            <li class="hidden-xs hidden"><a href="#relationships" data-toggle="tab">Others</a></li>
+		            <li class="hidden-xs dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Others
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+				            <li class="hidden-xs dropdown-item"><a href="#dd" data-toggle="tab">Due Diligence</a></li>
+				            <li class="hidden-xs dropdown-item"><a href="#reporting" data-toggle="tab">Reporting</a></li>
+				            <li class="dropdown-item"><a href="#relationships" data-toggle="tab">P-C Relationships</a></li>
+				            <li class="hidden-xs dropdown-item"><a href="#roles" data-toggle="tab">Contact Roles</a></li>
+				            <li class="hidden-xs dropdown-item"><a href="#expense" data-toggle="tab">Expense</a></li>
+				            <li class="hidden-xs dropdown-item"><a href="#snapshot" data-toggle="tab">Snapshot</a></li>
+					    </ul>
+					</li>
 		        </ul>
 			</div>
 
@@ -129,7 +138,7 @@
                 </div>
                 <div id="relationships" class="tab-pane fade bg-white p10">
 		        	<script>
-						$("#relationships").load("../partialView/investment/_relationships.html");
+						$("#relationships").load("../partialView/investment/stage/_relationships.html");
 	 				</script>
                 </div>
                 <div id="deals" class="tab-pane fade bg-white p10">
@@ -139,17 +148,17 @@
                 </div>
                 <div id="legal" class="tab-pane fade bg-white p10">
 		        	<script>
-						$("#legal").load("../partialView/investment/_legal.html");
+						$("#legal").load("../partialView/investment/stage/_legal.html");
 	 				</script>
                 </div>
                 <div id="instruments" class="tab-pane fade bg-white p10">
 					<script>
-						$("#instruments").load("../partialView/investment/_instruments.html");
+						$("#instruments").load("../partialView/investment/stage/_instruments.html");
 	 				</script>
                 </div>
                 <div id="roles" class="tab-pane fade bg-white p10">
 		        	<script>
-						$("#roles").load("../partialView/investment/_roles.html");
+						$("#roles").load("../partialView/investment/stage/_roles.html");
 	 				</script>
                 </div>
                 <div id="events" class="tab-pane fade bg-white p10">
@@ -159,12 +168,12 @@
                 </div>
                 <div id="expense" class="tab-pane fade bg-white p10">
 		        	<script>
-						$("#expense").load("../partialView/investment/_expense.html");
+						$("#expense").load("../partialView/investment/stage/_expense.html");
 	 				</script>
                 </div>
                 <div id="snapshot" class="tab-pane fade bg-white p10">
 		        	<script>
-						$("#snapshot").load("../partialView/investment/_snapshot.html");
+						$("#snapshot").load("../partialView/investment/stage/_snapshot.html");
 	 				</script>
                 </div>
                 <div id="attachments" class="tab-pane fade bg-white p10">
@@ -174,18 +183,27 @@
                 </div>
                 <div id="dd" class="tab-pane fade bg-white p10">
 					<script>
-						$("#dd").load("../partialView/investment/_dd.html");
+						$("#dd").load("../partialView/investment/stage/_dd.html");
 	 				</script>
                 </div>
                 <div id="reporting" class="tab-pane fade bg-white p10">
 					<script>
-						$("#reporting").load("../partialView/investment/_reporting.html");
+						$("#reporting").load("../partialView/investment/stage/_reporting.html");
 	 				</script>
                 </div>
             </div>
 
         </div>
         <!-- /page content -->
+
+		<div id="chart" class="modal fade" role="dialog" aria-hidden="true">
+	        <div class="modal-dialog">
+	            <div class="modal-content">
+	                <div id="mountNode"></div>
+	            </div>
+	        </div>
+		</div>
+
 
       </div>
     </div>
@@ -309,9 +327,142 @@
 	<!-- Custom Scripts by Vincent -->
     <script src="../../build/js/my_custom.js"></script>
 
+	<script>/*Fixing iframe window.innerHeight 0 issue in Safari*/document.body.clientHeight;</script>
+	<script src="https://gw.alipayobjects.com/os/antv/assets/g6/1.2.8/g6.min.js"></script>
+
     <script>
         $(function () {
-			
+			const Util = G6.Util;
+			// 第三步：设置数据
+			const data = {
+			  "source": {
+			    "nodes": [
+			      {
+			        "shape": "rect",
+			        "label": "大米科技有限责任公司 ",
+			        "id": "keyNode",
+			        "x": 300,
+			        "y": 240,
+			        "color": "#FF9D2D"
+			      },
+			      {
+			        "shape": "rect",
+			        "label": "洪潮锋 10.07%",
+			        "x": 200,
+			        "y": 170,
+			        "id": "lp1"
+			      },
+			      {
+			        "shape": "rect",
+			        "label": "雷大军 77%",
+			        "x": 300,
+			        "y": 130,
+			        "id": "lp2"
+			      },
+			      {
+			        "shape": "rect",
+			        "label": "刘华 12.13%",
+			        "x": 400,
+			        "y": 170,
+			        "id": "lp3"
+			      },
+			      {
+			        "shape": "rect",
+			        "label": "Lots 1 (stock 20180131)",
+			        "x": 300,
+			        "y": 300,
+			        "id": "gm"
+			      },
+			      {
+			        "shape": "rect",
+			        "label": "Deal 1",
+			        "x": 300,
+			        "y": 360,
+			        "id": "im"
+			      }
+			    ],
+			    "edges": [
+			      {
+			        "shape": "arrow",
+			        "source": "lp1",
+			        "target": "keyNode",
+			        "id": "e1",
+					"controlPoints": [
+			          {
+			            "x": 200,
+			            "y": 170
+			          },
+			          {
+			            "x": 200,
+			            "y": 200
+			          },
+			          {
+			            "x": 300,
+			            "y": 200
+			          },
+			          {
+			            "x": 300,
+			            "y": 250
+			          }
+			        ]
+			      },
+			      {
+			        "shape": "arrow",
+			        "source": "lp2",
+			        "target": "keyNode",
+			        "id": "e2"
+			      },
+			      {
+			        "shape": "arrow",
+			        "source": "lp3",
+			        "target": "keyNode",
+			        "id": "e3",
+					"controlPoints": [
+			          {
+			            "x": 400,
+			            "y": 170
+			          },
+			          {
+			            "x": 400,
+			            "y": 200
+			          },
+			          {
+			            "x": 300,
+			            "y": 200
+			          },
+			          {
+			            "x": 300,
+			            "y": 250
+			          }
+				    ]
+			      },
+			      {
+			        "shape": "arrow",
+			        "source": "gm",
+			        "target": "keyNode",
+			        "id": "e4"
+			      },
+			      {
+			        "shape": "arrow",
+			        "source": "im",
+			        "target": "gm",
+				        "id": "e5"
+			      },
+			    ]
+			  }
+			};
+			// 第四步：配置G6画布
+			const net = new G6.Net({
+			    id: 'mountNode',      // 容器ID
+				grid: null,
+				fitView: "cc",
+				width: 600,
+			    mode: 'none'
+			});
+			// 第五步：载入数据
+			net.read(Util.clone(data));
+			// 第六步：渲染关系图
+			net.render();
         })
     </script>
 	

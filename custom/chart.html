@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点方法</title>
+    <style>::-webkit-scrollbar{display:none;}html,body{overflow:hidden;}</style>
+</head>
+<body>
+<div id="mountNode"></div>
+<script>/*Fixing iframe window.innerHeight 0 issue in Safari*/document.body.clientHeight;</script>
+<script src="https://gw.alipayobjects.com/os/antv/assets/g6/1.2.8/g6.min.js"></script>
+<script src="https://gw.alipayobjects.com/os/antv/assets/lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+const Util = G6.Util;
+// 第三步：设置数据
+const data = {
+  "source": {
+    "nodes": [
+      {
+        "shape": "rect",
+        "label": "大米科技有限责任公司 ",
+        "id": "keyNode",
+        "x": 300,
+        "y": 240,
+        "color": "#FF9D2D"
+      },
+      {
+        "shape": "rect",
+        "label": "雷大军 77%",
+        "x": 200,
+        "y": 170,
+        "id": "lp1"
+      },
+      {
+        "shape": "rect",
+        "label": "洪潮锋 10.07%",
+        "x": 300,
+        "y": 130,
+        "id": "lp2"
+      },
+      {
+        "shape": "rect",
+        "label": "刘华 12.13%",
+        "x": 400,
+        "y": 170,
+        "id": "lp3"
+      },
+      {
+        "shape": "rect",
+        "label": "Lots 1 (stock 20180131)",
+        "x": 300,
+        "y": 300,
+        "id": "gm"
+      },
+      {
+        "shape": "rect",
+        "label": "Deal 1",
+        "x": 300,
+        "y": 360,
+        "id": "im"
+      }
+    ],
+    "edges": [
+      {
+        "shape": "arrow",
+        "source": "lp1",
+        "target": "keyNode",
+        "id": "e1",
+		"controlPoints": [
+          {
+            "x": 200,
+            "y": 170
+          },
+          {
+            "x": 200,
+            "y": 200
+          },
+          {
+            "x": 300,
+            "y": 200
+          },
+          {
+            "x": 300,
+            "y": 250
+          }
+        ]
+      },
+      {
+        "shape": "arrow",
+        "source": "lp2",
+        "target": "keyNode",
+        "id": "e2"
+      },
+      {
+        "shape": "arrow",
+        "source": "lp3",
+        "target": "keyNode",
+        "id": "e3",
+		"controlPoints": [
+          {
+            "x": 400,
+            "y": 170
+          },
+          {
+            "x": 400,
+            "y": 200
+          },
+          {
+            "x": 300,
+            "y": 200
+          },
+          {
+            "x": 300,
+            "y": 250
+          }
+	    ]
+      },
+      {
+        "shape": "arrow",
+        "source": "gm",
+        "target": "keyNode",
+        "id": "e4"
+      },
+      {
+        "shape": "arrow",
+        "source": "im",
+        "target": "gm",
+	        "id": "e5"
+      },
+    ]
+  }
+};
+// 第四步：配置G6画布
+const net = new G6.Net({
+    id: 'mountNode',      // 容器ID
+	grid: null,
+	fitView: "autoSize",
+    mode: 'none'
+});
+// 第五步：载入数据
+net.read(Util.clone(data));
+// 第六步：渲染关系图
+net.render();
+</script>
+</body>
+</html>

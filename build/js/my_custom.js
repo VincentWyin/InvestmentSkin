@@ -4,6 +4,7 @@ $(function () {
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         $("#search_title .collapse-link").click();
     	$("#menu_toggle").click();
+    	$("#menu_toggle").click();
     }
 			
     if($("#_menu .active").length == 0){

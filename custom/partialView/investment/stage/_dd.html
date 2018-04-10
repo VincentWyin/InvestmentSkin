@@ -1,0 +1,218 @@
+
+<form class="form-horizontal form-label-left">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="x_panel">
+				<div class="x_title">
+					Recommended By
+				</div>
+				<div class="x_content">
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Date">
+                            Name
+                        </label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input type="text" id="Date" class="form-control col-md-7 col-xs-12">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-type" class="control-label col-md-3 col-sm-3 col-xs-12">Position</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <select class="form-control" id="contact-type">
+                                <option>- Not Specified -</option>
+                            </select>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="x_panel">
+				<div class="x_title">
+					Concurred By
+				</div>
+				<div class="x_content">
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Date">
+                            Name
+                        </label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input type="text" id="Date" class="form-control col-md-7 col-xs-12">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-type" class="control-label col-md-3 col-sm-3 col-xs-12">Position</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <select class="form-control" id="contact-type">
+                                <option>- Not Specified -</option>
+                            </select>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+
+
+<form class="form-horizontal form-label-left">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="x_panel">
+				<div class="x_title">
+					Task
+				</div>
+				<div class="x_content">
+
+					<div style="height:200px;" class="">
+					    <table id="contact_activity" class="nowrap">
+					        <tbody>
+					        	<tr><td>[-] -- Due Diligence Tasks</td></tr>
+					        </tbody>
+					    </table>
+					</div>
+                    <div>
+						Note: Completed Task In Green; Due Task in Red.
+                    </div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-8">
+			<div class="x_panel">
+				<div class="x_title">
+					Task Detail
+				</div>
+				<div class="x_content">
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Date">
+                            Task Name
+                        </label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input type="text" id="Date" class="form-control col-md-7 col-xs-12">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Date">
+                            Duration
+                        </label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input type="text" id="Date" class="form-control col-md-7 col-xs-12">
+                        </div>
+                    </div>
+					<div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="spouse_bday">
+                            Start
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback mbn">
+                            <input type="text" class="form-control col-md-7 col-xs-12 has-feedback-left cust_datetimepicker" id="spouse_bday">
+                            <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
+                        </div>
+                    </div>
+					<div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="spouse_bday">
+                            Finish
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback mbn">
+                            <input type="text" class="form-control col-md-7 col-xs-12 has-feedback-left cust_datetimepicker" id="spouse_bday">
+                            <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Date">
+                            % Completed
+                        </label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input type="text" id="Date" class="form-control col-md-7 col-xs-12">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Date">
+                            Predecessors
+                        </label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input type="text" id="Date" class="form-control col-md-7 col-xs-12">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="comment">
+                            Task Notes
+                        </label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <textarea id="comment" class="form-control" name="comment" data-parsley-trigger="keyup"
+                                      data-parsley-minlength="20" data-parsley-maxlength="100"
+                                      data-parsley-validation-threshold="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-type" class="control-label col-md-3 col-sm-3 col-xs-12">Show On Report</label>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <select class="form-control" id="contact-type">
+                                <option>Yes</option>
+                                <option>No</option>
+                            </select>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<div class="x_panel">
+				<div class="x_title">
+					File Attachement
+				</div>
+				<div class="x_content">
+
+					<div class="table-responsive">
+					    <table class="table table-striped">
+					        <thead>
+					            <tr class="headings">
+					                <th>&nbsp;</th>
+					                <th>File Name</th>
+					                <th>Description</th>
+					                <th>Folder</th>
+					            </tr>
+					        </thead>
+					        <tbody>
+								<tr style="height:100px;">
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+					        </tbody>
+					    </table>
+					</div>
+			        <div class="form-horizontal form-label-left">
+			            <div class="row">
+			                <div class="col-md-6 col-sm-6 col-xs-12">
+			                    <div class="form-group">
+			                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="role_contact">
+			                            Keywords
+			                        </label>
+			                        <div class="col-md-9 col-sm-9 col-xs-12">
+			                            <textarea id="comment" class="form-control" name="comment" data-parsley-trigger="keyup"
+			                                      data-parsley-minlength="20" data-parsley-maxlength="100"
+			                                      data-parsley-validation-threshold="10"></textarea>
+			                        </div>
+			                    </div>
+			                    <div class="form-group">
+			                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="role_contact">
+			                            File Size
+			                        </label>
+			                        <div class="col-md-9 col-sm-9 col-xs-12">
+			                            <input type="text" id="role_contact" class="form-control col-md-7 col-xs-12">
+			                        </div>
+			                    </div>
+						        <div class="form-group">
+						            <div class="col-md-3 col-sm-3 col-xs-12">
+						                <button type="submit" class="btn btn-success">Open</button>
+						            </div>
+						        </div>
+			                </div>
+			            </div>
+			        </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+
+

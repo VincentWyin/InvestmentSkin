@@ -68,7 +68,7 @@
 		
 			<!-- Investment Header -->
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-8 col-xs-12">
 					<div class="x_panel">
 						<div class="x_content">
 							<h3>大米科技有限责任公司 <span class="fs12">[110804801441084]</span></h3>
@@ -83,40 +83,50 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-xs-12">
 					<div class="x_panel">
-						<div class="x_content">
+						<div class="x_content pbn mtn">
 							current stage: <br />
-							<div class="mb10"><b>In Progress</b></div>
+							<div class="mb10 fs20"><b>In Progress</b></div>
 							Next stage:  <br />
-							<b>Making Investment Descision</b>  <br />
-							<a href="company_inprogress.html" class="mt10 btn btn-primary">Go to Next Stage</a>
+							<b class="fs20">Investment Descision</b>  <br />
+							<a href="company_investment_descision.html" class="mt10 btn btn-primary btn-sm mt5">Go to Next Stage</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			
-		    <div id="tab_bable">
+		    <div id="tab_table">
 		        <ul class="nav nav-tabs">
-		            <li><a href="#progress" data-toggle="tab">Progress</a></li>
-		            <li class="active ml10"><a data-toggle="tab" href="#profile">Profile</a></li>
-		            <li class="hidden-xs"><a href="#legal" data-toggle="tab">Legal</a></li>
-		            <li class="hidden-xs"><a href="#events" data-toggle="tab">Events</a></li>
+		            <li><a href="#progress" data-toggle="tab" class="ml10">Progress</a></li>
+		            <li class="active"><a data-toggle="tab" href="#profile">Profile</a></li>
+		            <li class=""><a href="#legal" data-toggle="tab">Legal</a></li>
+		            <li class=""><a href="#events" data-toggle="tab">Events</a></li>
 		            <li class="hidden-xs"><a href="#instruments" data-toggle="tab">Instruments</a></li>
-		            <li class="hidden-xs"><a href="#deals" data-toggle="tab">Deals</a></li>
-		            <li class="hidden-xs hidden"><a href="#roles" data-toggle="tab">Contact Roles</a></li>
-		            <li class="hidden-xs hidden"><a href="#expense" data-toggle="tab">Expense</a></li>
-		            <li class="hidden-xs hidden"><a href="#snapshot" data-toggle="tab">Snapshot</a></li>
+		            <li class=""><a href="#deals" data-toggle="tab">Deals</a></li>
 		            <li class="hidden-xs"><a href="#attachments" data-toggle="tab">Attachments</a></li>
-		            <li class="hidden-xs"><a href="#dd" data-toggle="tab">Due Diligence</a></li>
-		            <li class="hidden-xs"><a href="#reporting" data-toggle="tab">Reporting</a></li>
-		            <li class="hidden"><a href="#relationships" data-toggle="tab">P-C Relationships</a></li>
-		            <li class="hidden-xs hidden"><a href="#relationships" data-toggle="tab">Others</a></li>
+		            <li class="hidden-xs dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Others
+						<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+				            <li class="hidden-xs dropdown-item"><a href="#dd" data-toggle="tab">Due Diligence</a></li>
+				            <li class="hidden-xs dropdown-item"><a href="#reporting" data-toggle="tab">Reporting</a></li>
+				            <li class="hidden dropdown-item"><a href="#relationships" data-toggle="tab">P-C Relationships</a></li>
+				            <li class="hidden-xs hidden dropdown-item"><a href="#roles" data-toggle="tab">Contact Roles</a></li>
+				            <li class="hidden-xs hidden dropdown-item"><a href="#expense" data-toggle="tab">Expense</a></li>
+				            <li class="hidden-xs hidden dropdown-item"><a href="#snapshot" data-toggle="tab">Snapshot</a></li>
+					    </ul>
+					</li>
 		        </ul>
 			</div>
 
             <div class="tab-content">
+                <div id="progress" class="tab-pane fade in bg-white p10">
+		        	<script>
+						$("#progress").load("../partialView/investment/stage/_progress.html");
+	 				</script>
+                </div>
                 <div id="profile" class="tab-pane fade in active bg-white p10">
 		        	<script>
 						$("#profile").load("../partialView/investment/stage/_profile.html");
@@ -124,17 +134,17 @@
                 </div>
                 <div id="relationships" class="tab-pane fade bg-white p10">
 		        	<script>
-						$("#relationships").load("../partialView/investment/_relationships.html");
+						$("#relationships").load("../partialView/investment/stage/_relationships.html");
 	 				</script>
                 </div>
                 <div id="deals" class="tab-pane fade bg-white p10">
 		        	<script>
-						$("#deals").load("../partialView/investment/_deals.html");
+						$("#deals").load("../partialView/investment/stage/_deals.html");
 	 				</script>
                 </div>
                 <div id="legal" class="tab-pane fade bg-white p10">
 		        	<script>
-						$("#legal").load("../partialView/investment/stage/_legal.html");
+						$("#legal").load("../partialView/investment/stage/stage/_legal.html");
 	 				</script>
                 </div>
                 <div id="instruments" class="tab-pane fade bg-white p10">
@@ -144,37 +154,37 @@
                 </div>
                 <div id="roles" class="tab-pane fade bg-white p10">
 		        	<script>
-						$("#roles").load("../partialView/investment/_roles.html");
+						$("#roles").load("../partialView/investment/stage/_roles.html");
 	 				</script>
                 </div>
                 <div id="events" class="tab-pane fade bg-white p10">
 					<script>
-						$("#events").load("../partialView/investment/_events.html");
+						$("#events").load("../partialView/investment/stage/_events.html");
 	 				</script>
                 </div>
                 <div id="expense" class="tab-pane fade bg-white p10">
 		        	<script>
-						$("#expense").load("../partialView/investment/_expense.html");
+						$("#expense").load("../partialView/investment/stage/_expense.html");
 	 				</script>
                 </div>
                 <div id="snapshot" class="tab-pane fade bg-white p10">
 		        	<script>
-						$("#snapshot").load("../partialView/investment/_snapshot.html");
+						$("#snapshot").load("../partialView/investment/stage/_snapshot.html");
 	 				</script>
                 </div>
                 <div id="attachments" class="tab-pane fade bg-white p10">
 		        	<script>
-						$("#attachments").load("../partialView/investment/_attachments.html");
+						$("#attachments").load("../partialView/investment/stage/_attachments.html");
 	 				</script>
                 </div>
                 <div id="dd" class="tab-pane fade bg-white p10">
 					<script>
-						$("#dd").load("../partialView/investment/_dd.html");
+						$("#dd").load("../partialView/investment/stage/_dd.html");
 	 				</script>
                 </div>
                 <div id="reporting" class="tab-pane fade bg-white p10">
 					<script>
-						$("#reporting").load("../partialView/investment/_reporting.html");
+						$("#reporting").load("../partialView/investment/stage/_reporting.html");
 	 				</script>
                 </div>
             </div>
@@ -185,17 +195,17 @@
       </div>
     </div>
 
-    <div class="modal fade" id="dependant_bday" tabindex="-1" role="dialog" aria-labelledby="dependant_bday_title" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade" id="new_note">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title" id="dependant_bday_title">Add Dependent & Birthday</h2>
+                    <h2 class="modal-title" id="dependant_bday_title">Add Note</h2>
                 </div>
                 <div class="modal-body">
                     <div class="form-horizontal form-label-left">
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="m_bday_name">
-                                Name
+                                Title
                             </label>
                             <div class="col-md-9 col-sm-9 col-xs-12">
                                 <input type="text" id="m_bday_name" class="form-control col-md-7 col-xs-12">
@@ -203,10 +213,52 @@
                         </div>
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="m_bday">
-                                Birthday
+                                Detail
                             </label>
-                            <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback mbn">
-                                <input type="text" class="form-control col-md-7 col-xs-12 has-feedback-left cust_datetimepicker" id="m_bday">
+                            <div class="col-md-9 col-sm-9 col-xs-12 form-group mbn">
+	                            <textarea id="comment" class="form-control" name="comment" data-parsley-trigger="keyup"
+	                                      data-parsley-minlength="20" data-parsley-maxlength="100"
+	                                      data-parsley-validation-threshold="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+					<div class="pull-left" style="font-size:24px;">
+						<i class="glyphicon glyphicon-volume-up"></i> &nbsp;
+						<i class="glyphicon glyphicon-picture"></i> &nbsp;&nbsp;
+						<i class="glyphicon glyphicon-pencil"></i> &nbsp;
+					</div>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="new_task">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="dependant_bday_title">Add Task</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="form-horizontal form-label-left">
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="m_bday_name">
+                                Content
+                            </label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input type="text" id="m_bday_name" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="m_bday_name">
+                                Deadline
+                            </label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input type="text" class="form-control col-md-7 col-xs-12 has-feedback-left cust_datetimepicker" id="spouse_bday">
                                 <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
                             </div>
                         </div>
@@ -219,23 +271,7 @@
             </div>
         </div>
     </div>
-
-    <div class="modal fade" id="m_contact_activity" tabindex="-1" role="dialog" aria-labelledby="m_contact_activity_title" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="modal-title" id="m_contact_activity_title">Add Activity</h2>
-                </div>
-                <div class="modal-body">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+	
     <!-- jQuery -->
     <script src="../../vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
