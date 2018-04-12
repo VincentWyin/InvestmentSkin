@@ -15,14 +15,17 @@ $(function () {
 	    },1000);
     }
 	
+	if ($('.control-group .tags').length ){ 
+    	$('.control-group .tags').tagsInput({ width: 'auto', 'defaultText': 'add here' });
+    }
 	
-    $('.control-group .tags').tagsInput({ width: 'auto', 'defaultText': 'add here' });
+	if ($('.cust_datetimepicker').length ){
+	    $('.cust_datetimepicker').daterangepicker({
+	        singleDatePicker: true,
+	        singleClasses: "picker_2"
+	    }, function (start, end, label) {
+	        console.log(start.toISOString(), end.toISOString(), label);
+	    });
+	}
 
-    $('.cust_datetimepicker').daterangepicker({
-        singleDatePicker: true,
-        singleClasses: "picker_2"
-    }, function (start, end, label) {
-        console.log(start.toISOString(), end.toISOString(), label);
-    });
-	
 })
