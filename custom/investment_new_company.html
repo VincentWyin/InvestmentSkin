@@ -68,17 +68,23 @@
         <div id="tab_table">
             <ul class="nav nav-tabs">
                 <li class="active ml10"><a data-toggle="tab" href="#profile">Profile</a></li>
-                <li><a href="#relationships" data-toggle="tab">P-C Relationships</a></li>
                 <li><a href="#deals" data-toggle="tab">Deals</a></li>
                 <li><a href="#legal" data-toggle="tab">Legal</a></li>
                 <li><a href="#instruments" data-toggle="tab">Instruments</a></li>
-                <li class="hidden-xs"><a href="#roles" data-toggle="tab">Contact Roles</a></li>
-                <li class="hidden-xs"><a href="#events" data-toggle="tab">Events</a></li>
-                <li class="hidden-xs"><a href="#expense" data-toggle="tab">Expense</a></li>
-                <li class="hidden-xs"><a href="#snapshot" data-toggle="tab">Snapshot</a></li>
-                <li class="hidden-xs"><a href="#attachments" data-toggle="tab">Attachments</a></li>
-                <li class="hidden-xs"><a href="#dd" data-toggle="tab">Due Diligence</a></li>
-                <li class="hidden-xs"><a href="#reporting" data-toggle="tab">Reporting</a></li>
+                <li class=""><a href="#events" data-toggle="tab">Events</a></li>
+                <li class=""><a href="#snapshot" data-toggle="tab">Snapshot</a></li>
+                <li class=""><a href="#attachments" data-toggle="tab">Attachments</a></li>
+                <li class=""><a href="#dd" data-toggle="tab">Due Diligence</a></li>
+                <li class=""><a href="#reporting" data-toggle="tab">Reporting</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class=""><a href="#expense" data-toggle="tab">Expense</a></li>
+                        <li class=""><a href="#roles" data-toggle="tab">Contact Roles</a></li>
+                        <li><a href="#relationships" data-toggle="tab">P-C Relationships</a></li>
+                    </ul>
+                </li>
             </ul>
 		</div>
 
@@ -89,7 +95,7 @@
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <div class="x_panel">
                                     <div class="x_content">
-                                        <div class="form-group hidden-xs">
+                                        <div class="form-group ">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="reference-numnber">
                                                 Ref. No.
                                             </label>
@@ -105,7 +111,7 @@
                                                 <input type="text" id="full-name" required="required" class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
-                                        <div class="form-group hidden-xs">
+                                        <div class="form-group ">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
                                                 Deal Name
                                             </label>
@@ -113,7 +119,7 @@
                                                 <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
-                                        <div class="form-group hidden-xs">
+                                        <div class="form-group ">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
                                                 Company Id No.
                                             </label>
@@ -121,7 +127,7 @@
                                                 <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
-                                        <div class="form-group hidden-xs">
+                                        <div class="form-group ">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
                                                 Tax ID
                                             </label>
@@ -168,7 +174,7 @@
                                                           data-parsley-validation-threshold="10"></textarea>
                                             </div>
                                         </div>
-                                        <div class="form-group hidden-xs">
+                                        <div class="form-group ">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
                                                 City
                                             </label>
@@ -176,7 +182,7 @@
                                                 <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
-                                        <div class="form-group hidden-xs">
+                                        <div class="form-group ">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
                                                 State/Province
                                             </label>
@@ -184,7 +190,7 @@
                                                 <input type="text" id="web-address" required="required" class="form-control col-md-7 col-xs-12">
                                             </div>
                                         </div>
-                                        <div class="form-group hidden-xs">
+                                        <div class="form-group ">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
                                                 Zip/Postal Code
                                             </label>
@@ -212,7 +218,7 @@
 										<br/>
 										<br/>
 										
-                                        <div class="form-group hidden-xs">
+                                        <div class="form-group ">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
                                                 Phone
                                             </label>
@@ -221,7 +227,7 @@
                                             </div>
                                         </div>
 										
-                                        <div class="form-group hidden-xs">
+                                        <div class="form-group ">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
                                                 Fax
                                             </label>
@@ -230,7 +236,7 @@
                                             </div>
                                         </div>
 										
-                                        <div class="form-group hidden-xs">
+                                        <div class="form-group ">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
                                                 Web Address
                                             </label>
@@ -242,7 +248,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6 col-sm-6 col-xs-12 hidden-xs">
+                            <div class="col-md-6 col-sm-6 col-xs-12 ">
                                 <div class="x_panel">
                                     <div class="x_content">
 										
@@ -269,7 +275,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="control-group hidden-xs">
+                                        <div class="control-group ">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Investment Group</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
                                                 <input id="category" type="text" class="tags form-control" value="" />
@@ -280,7 +286,7 @@
 										
 										<br/><br/>
 
-                                        <div class="form-group hidden-xs">
+                                        <div class="form-group ">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
                                                 Region
                                             </label>
@@ -297,7 +303,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group hidden-xs">
+                                        <div class="form-group ">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="web-address">
                                                 Email
                                             </label>
@@ -369,7 +375,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row hidden-xs">
+                        <div class="row ">
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="x_panel">
                                     <div class="x_content">

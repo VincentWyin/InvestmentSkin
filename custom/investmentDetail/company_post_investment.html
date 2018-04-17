@@ -105,7 +105,7 @@
 		        <ul class="nav nav-tabs">
 		            <li class="active"><a href="#progress" data-toggle="tab" class="ml10">Progress</a></li>
 		            <li><a data-toggle="tab" href="#profile">Profile</a></li>
-		            <li class=""><a href="#legal" data-toggle="tab">Legal</a></li>
+		            <li class="hidden-xs"><a href="#legal" data-toggle="tab">Legal</a></li>
 		            <li class=""><a href="#events" data-toggle="tab">Events</a></li>
 		            <li class="hidden-xs"><a href="#instruments" data-toggle="tab">Instruments</a></li>
 		            <li class=""><a href="#deals" data-toggle="tab">Deals</a></li>
@@ -368,17 +368,24 @@
 			      },
 			      {
 			        "shape": "rect",
-			        "label": "Lots 1 (stock 20180131)",
-			        "x": 300,
+			        "label": "Lots 1",
+			        "x": 200,
 			        "y": 300,
-			        "id": "gm"
+			        "id": "l1"
 			      },
 			      {
 			        "shape": "rect",
-			        "label": "Deal 1",
+			        "label": "Stocks Deal 20180131",
 			        "x": 300,
 			        "y": 360,
-			        "id": "im"
+			        "id": "d1"
+			      },
+			      {
+			        "shape": "rect",
+			        "label": "Lots 2",
+			        "x": 400,
+			        "y": 300,
+			        "id": "l2"
 			      }
 			    ],
 			    "edges": [
@@ -438,27 +445,119 @@
 			      },
 			      {
 			        "shape": "arrow",
-			        "source": "gm",
+			        "source": "l1",
 			        "target": "keyNode",
-			        "id": "e4"
+			        "id": "e4",
+					"controlPoints": [
+			          {
+			            "x": 200,
+			            "y": 300
+			          },
+			          {
+			            "x": 200,
+			            "y": 270
+			          },
+			          {
+			            "x": 300,
+			            "y": 270
+			          },
+			          {
+			            "x": 300,
+			            "y": 250
+			          }
+			        ]
 			      },
 			      {
 			        "shape": "arrow",
-			        "source": "im",
-			        "target": "gm",
-				        "id": "e5"
+			        "source": "d1",
+			        "target": "l1",
+				        "id": "e5",
+					"controlPoints": [
+			          {
+			            "x": 300,
+			            "y": 360
+			          },
+			          {
+			            "x": 300,
+			            "y": 330
+			          },
+			          {
+			            "x": 200,
+			            "y": 330
+			          },
+			          {
+			            "x": 200,
+			            "y": 300
+			          }
+			        ]
 			      },
+			      {
+			        "shape": "arrow",
+			        "source": "l2",
+			        "target": "keyNode",
+			        "id": "e6",
+					"controlPoints": [
+			          {
+			            "x": 400,
+			            "y": 300
+			          },
+			          {
+			            "x": 400,
+			            "y": 270
+			          },
+			          {
+			            "x": 300,
+			            "y": 270
+			          },
+			          {
+			            "x": 300,
+			            "y": 250
+			          }
+			        ]
+			      },
+			      {
+			        "shape": "arrow",
+			        "source": "d1",
+			        "target": "l2",
+				    "id": "e7",
+					"controlPoints": [
+			          {
+			            "x": 300,
+			            "y": 360
+			          },
+			          {
+			            "x": 300,
+			            "y": 330
+			          },
+			          {
+			            "x": 400,
+			            "y": 330
+			          },
+			          {
+			            "x": 400,
+			            "y": 300
+			          }
+			        ]
+			      }
 			    ]
 			  }
 			};
+
+			var view = "cc";
+
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				view = "autoSize";
+			}
+
 			// 第四步：配置G6画布
 			const net = new G6.Net({
 			    id: 'mountNode',      // 容器ID
 				grid: null,
-				fitView: "cc",
+				fitView: view,
 				width: 600,
 			    mode: 'none'
 			});
+
 			// 第五步：载入数据
 			net.read(Util.clone(data));
 			// 第六步：渲染关系图

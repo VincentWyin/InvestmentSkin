@@ -4266,6 +4266,10 @@ table thead .checkbox.radio { margin-top:-7px;margin-top:-21px; }
     padding:10px;
 }
 
+.pln{
+    padding-left:0px;    
+}
+
 .pbn{
 	padding-bottom:0px;
 }
@@ -4535,3 +4539,4 @@ table thead .checkbox.radio { margin-top:-7px;margin-top:-21px; }
 	}
 	
 .wizard_steps li .step_descr{width:150px;}
+
