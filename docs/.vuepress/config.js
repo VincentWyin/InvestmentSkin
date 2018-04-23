@@ -1,6 +1,6 @@
 module.exports = {
   dest: 'Introduction',
-  base: '/Common/',
+  base: '/InvestmentSkin/',
   locales: {
     '/': {
       lang: 'en-US',
