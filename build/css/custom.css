@@ -1133,7 +1133,7 @@ legend {
     border-top: 1px solid #E6E9ED
 }
 .profile_details .profile_view .left {
-    margin-top: 20px
+    margin-top: 15px
 }
 .profile_details .profile_view .left p {
     margin-bottom: 3px
@@ -4494,6 +4494,10 @@ table thead .checkbox.radio { margin-top:-7px;margin-top:-21px; }
     margin-top:20px;
 }
 
+.mt30 {
+    margin-top:30px;
+}
+
 .mb20 {
     margin-bottom:20px;
 }
@@ -4571,3 +4575,8 @@ table thead .checkbox.radio { margin-top:-7px;margin-top:-21px; }
 ul.messages li.sub-message{
     padding-left:46px;
 }
+
+.lh25{
+    line-height: 25px;
+}
+

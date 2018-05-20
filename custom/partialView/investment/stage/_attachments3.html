@@ -1,149 +1,133 @@
 <div class="row">
 	<div class="col-md-12">
-		<div class="row">
+		<div class="row" id="document-list">
 			<div class="col-md-12 col-sm-12 col-xs-12 text-center">
-			<ul class="pagination pagination-split">
-			  <li>
-				  <a class="btn btn-app">
-                      <span class="badge bg-green">2</span>
-                      <i class="fa fa-share-alt mb5"></i> DD Document
-                    </a></li>
-			  <li>
-				  <a class="btn btn-app">
-                      <span class="badge bg-green">3</span>
-                      <i class="fa fa-dashboard mb5"></i> Finanial Rpt
-                  </a>
-			  </li>
-			  <li>
-				  <a class="btn btn-app">
-                      <span class="badge bg-green">1</span>
-                      <i class="fa fa-suitcase mb5"></i> Contract
-                  </a>
-			  </li>
-			  <li style="margin-left:50px;">
-				  <a class="btn btn-app">
-                      <span class="badge bg-green">3</span>
-                      <i class="fa fa-file-word-o mb5"></i> Word
-                    </a>
-				</li>
-			  <li>
-				  <a class="btn btn-app">
-                      <span class="badge bg-red">0</span>
-                      <i class="fa fa-file-excel-o mb5"></i> Excel
-                    </a>
-				</li>
-			  <li>
-				  <a class="btn btn-app">
-                      <span class="badge bg-green">3</span>
-                      <i class="fa fa-file-pdf-o mb5"></i> PDF
-                    </a>
-				</li>
-			</ul>
+				<ul class="pagination pagination-split">
+					<li>
+						<a class="btn btn-app" data-filter="DD">
+							<span class="badge bg-green">2</span>
+							<i class="fa fa-share-alt mb5"></i> DD Document
+						</a>
+					</li><li>
+						<a class="btn btn-app" data-filter="FRPT">
+								<span class="badge bg-green">3</span>
+								<i class="fa fa-dashboard mb5"></i> Finanial Rpt
+						</a>
+					</li><li>
+						<a class="btn btn-app" data-filter="Contract">
+								<span class="badge bg-green">1</span>
+								<i class="fa fa-suitcase mb5"></i> Contract
+						</a>
+					</li><li style="margin-left:50px;">
+						<a class="btn btn-app" data-filter="WORD">
+							<span class="badge bg-green">3</span>
+							<i class="fa fa-file-word-o mb5"></i> Word
+						</a>
+					</li><li>
+						<a class="btn btn-app" data-filter="EXCEL">
+							<span class="badge bg-green">1</span>
+							<i class="fa fa-file-excel-o mb5"></i> Excel
+						</a>
+					</li><li>
+						<a class="btn btn-app" data-filter="PDF">
+							<span class="badge bg-green">3</span>
+							<i class="fa fa-file-pdf-o mb5"></i> PDF
+						</a>
+					</li><li style="margin-left:50px;">
+						<a class="btn btn-app" data-filter="">
+							<span class="badge bg-green">6</span>
+							<i class="fa fa-ellipsis-h mb5"></i> All
+						</a>
+					</li>
+				</ul>
 			</div>
 
 			<div class="clearfix"></div>
 
 			<div class="col-md-4 col-sm-4 col-xs-12 profile_details">
-				<div class="well profile_view">
+				<div class="well profile_view" data-search="DD,WORD">
 				  <div class="col-md-12">
-				    <div class="left col-xs-7">
-				      <h2>DD Document</h2>
-				      <p><label class="label label-primary">Word</label></p>
-				    </div>
-				    <div class="right col-xs-5 text-center text-primary" style="font-size:50px;">
+				    <div class="right col-xs-2 text-center text-primary" style="font-size:50px;">
 				      <i class="fa fa-file-word-o"></i>
 				    </div>
-				  </div>
-				  <div class="col-xs-12 bottom text-center">
-				    大米科技有限责任公司尽职调查.docx
-				  </div>
+				    <div class="left col-xs-10">
+				      <h2 class="lh25">GOGOVAN Competitive Landscape and Market Position.docx</h2>
+				    </div>
+					</div>
+				  <div class="col-xs-12 bottom text-center"><b>DD Document - Commercial</b></div>
 				</div>
 			</div>
 
 			<div class="col-md-4 col-sm-4 col-xs-12 profile_details">
-				<div class="well profile_view">
+				<div class="well profile_view" data-search="DD,PDF">
 				  <div class="col-md-12">
-				    <div class="left col-xs-7">
-				      <h2>DD Document</h2>
-				      <p><label class="label label-primary">Word</label></p>
-				    </div>
-				    <div class="right col-xs-5 text-center text-primary" style="font-size:50px;">
-				      <i class="fa fa-file-word-o"></i>
-				    </div>
-				  </div>
-				  <div class="col-xs-12 bottom text-center">
-				    大米科技有限责任公司尽职调查V2.docx
-				  </div>
-				</div>
-			</div>
-
-			<div class="col-md-4 col-sm-4 col-xs-12 profile_details">
-				<div class="well profile_view">
-				  <div class="col-md-12">
-				    <div class="left col-xs-7">
-				      <h2>Finanial Rpt</h2>
-				      <p><label class="label label-primary">PDF</label></p>
-				    </div>
-				    <div class="right col-xs-5 text-center text-danger" style="font-size:50px;">
+				    <div class="right col-xs-2 text-center text-danger" style="font-size:50px;">
 				      <i class="fa fa-file-pdf-o"></i>
 				    </div>
-				  </div>
-				  <div class="col-xs-12 bottom text-center">
-				    大米科技有限责任公司2017Q1财务报告.pdf
-				  </div>
+				    <div class="left col-xs-10">
+				      <h2 class="lh25">GOGOVAN Capital Requirements of the Business.pdf</h2>
+				    </div>
+					</div>
+				  <div class="col-xs-12 bottom text-center"><b>DD Document - Commercial</b></div>
 				</div>
 			</div>
 
 			<div class="col-md-4 col-sm-4 col-xs-12 profile_details">
-				<div class="well profile_view">
+				<div class="well profile_view" data-search="DD,EXCEL">
 				  <div class="col-md-12">
-				    <div class="left col-xs-7">
-				      <h2>Finanial Rpt</h2>
-				      <p><label class="label label-primary">PDF</label></p>
+				    <div class="right col-xs-2 text-center text-success" style="font-size:50px;">
+				      <i class="fa fa-file-excel-o"></i>
 				    </div>
-				    <div class="right col-xs-5 text-center text-danger" style="font-size:50px;">
+				    <div class="left col-xs-10">
+				      <h2 class="lh25">GOGOVAN Capital Requirements of the Business.xlsx</h2>
+				    </div>
+					</div>
+				  <div class="col-xs-12 bottom text-center"><b>DD Document - Commercial</b></div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-4 col-xs-12 profile_details">
+				<div class="well profile_view" data-search="FRPT,PDF">
+				  <div class="col-md-12">
+				    <div class="right col-xs-2 text-center text-danger" style="font-size:50px;">
 				      <i class="fa fa-file-pdf-o"></i>
 				    </div>
-				  </div>
-				  <div class="col-xs-12 bottom text-center">
-				    大米科技有限责任公司2017Q2财务报告.pdf
-				  </div>
+				    <div class="left col-xs-10">
+				      <h2>GOGOVAN-2017Q2-财务报告.pdf</h2>
+				    </div>
+					</div>
+				  <div class="col-xs-12 bottom text-center"><b>Finanial Rpt</b></div>
 				</div>
 			</div>
 
 			<div class="col-md-4 col-sm-4 col-xs-12 profile_details">
-				<div class="well profile_view">
+				<div class="well profile_view" data-search="FRPT,PDF">
 				  <div class="col-md-12">
-				    <div class="left col-xs-7">
-				      <h2>Finanial Rpt</h2>
-				      <p><label class="label label-primary">PDF</label></p>
-				    </div>
-				    <div class="right col-xs-5 text-center text-danger" style="font-size:50px;">
+				    <div class="right col-xs-2 text-center text-danger" style="font-size:50px;">
 				      <i class="fa fa-file-pdf-o"></i>
 				    </div>
-				  </div>
-				  <div class="col-xs-12 bottom text-center">
-				    大米科技有限责任公司2017Q3财务报告.pdf
-				  </div>
+				    <div class="left col-xs-10">
+				      <h2>GOGOVAN-2017Q3-财务报告.pdf</h2>
+				    </div>
+					</div>
+				  <div class="col-xs-12 bottom text-center"><b>Finanial Rpt</b></div>
 				</div>
 			</div>
 
 			<div class="col-md-4 col-sm-4 col-xs-12 profile_details">
-				<div class="well profile_view">
+				<div class="well profile_view" data-search="Contract,PDF">
 				  <div class="col-md-12">
-				    <div class="left col-xs-7">
-				      <h2>Contract</h2>
-				      <p><label class="label label-primary">Word</label></p>
+				    <div class="right col-xs-2 text-center text-danger" style="font-size:50px;">
+				      <i class="fa fa-file-pdf-o"></i>
 				    </div>
-				    <div class="right col-xs-5 text-center text-primary" style="font-size:50px;">
-				      <i class="fa fa-file-word-o"></i>
+				    <div class="left col-xs-10">
+				      <h2>GOGOVAN First Investment Contract.pdf</h2>
 				    </div>
-				  </div>
-				  <div class="col-xs-12 bottom text-center">
-				    大米科技有限责任公司合约.docx
-				  </div>
+					</div>
+				  <div class="col-xs-12 bottom text-center"><b>Contract</b></div>
 				</div>
 			</div>
+
 		</div>
 	</div>
 </div>
