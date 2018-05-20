@@ -4256,100 +4256,6 @@ table thead .checkbox.radio { margin-top:-7px;margin-top:-21px; }
 
 
 
-/* add by vincent 2018-03-03*/
-
-.lh40 {
-    line-height:40px;
-}
-
-.p10 {
-    padding:10px;
-}
-
-.pln{
-    padding-left:0px;    
-}
-
-.pbn{
-	padding-bottom:0px;
-}
-
-.ml10 {
-    margin-left:10px;
-}
-
-.mb10 {
-    margin-bottom:10px;
-}
-
-.mb15 {
-    margin-bottom:15px;
-}
-
-.mt10 {
-    margin-top:10px;
-}
-
-.mt20 {
-    margin-top:20px;
-}
-
-.mtn {
-    margin-top:0px;
-}
-
-.mt5 {
-    margin-top:5px;
-}
-
-.mb5 {
-    margin-bottom:5px;
-}
-
-.mbn {
-    margin-bottom:0px;
-}
-
-.fs12{
-	font-size:12px;
-}
-
-.fs10{
-	font-size:10px;
-}
-
-.fs20{
-	font-size:20px;
-}
-
-.form-group label, .control-group label {
-	font-weight:400;
-	font-size:12px;
-}
-
-#tab_table .nav .open>a, #tab_table .nav .open>a:focus, #tab_table .nav .open>a:hover{
-	background-color:#fff;
-	border-color:#ddd;
-}
-
-#tab_table .nav .active>a, #tab_table .nav .active>a:focus, #tab_table .nav .active>a:hover{
-	border-bottom-color:transparent;
-}
-
-#tab_table .dropdown-menu{
-	padding-top:10px;
-}
-
-#tab_table .nav .active .dropdown-menu{
-	border-top:0px;
-	margin-top:0px;
-}
-
-#tab_table .dropdown li a{
-	padding-top:10px;
-	padding-bottom:10px;
-}
-
 .timeline {
     list-style: none;
     padding: 20px 0 20px;
@@ -4368,7 +4274,6 @@ table thead .checkbox.radio { margin-top:-7px;margin-top:-21px; }
     }
 
     .timeline > li {
-        margin-bottom: 20px;
         position: relative;
     }
 
@@ -4401,6 +4306,7 @@ table thead .checkbox.radio { margin-top:-7px;margin-top:-21px; }
             position: relative;
             -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
             box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+            margin-bottom: 20px;
         }
 
             .timeline > li > .timeline-panel:before {
@@ -4517,6 +4423,7 @@ table thead .checkbox.radio { margin-top:-7px;margin-top:-21px; }
 
     ul.timeline > li > .timeline-panel {
         float: right;
+        margin-bottom: 20px;
     }
 
         ul.timeline > li > .timeline-panel:before {
@@ -4540,3 +4447,127 @@ table thead .checkbox.radio { margin-top:-7px;margin-top:-21px; }
 	
 .wizard_steps li .step_descr{width:150px;}
 
+
+/* add by vincent 2018-03-03*/
+
+.lh40 {
+    line-height:40px;
+}
+
+.p10 {
+    padding:10px;
+}
+
+.pn{
+    padding:0px;
+}
+
+.ptn{
+    padding:0px;
+}
+
+.pln{
+    padding-left:0px;    
+}
+
+.pbn{
+	padding-bottom:0px;
+}
+
+.ml10 {
+    margin-left:10px;
+}
+
+.mb10 {
+    margin-bottom:10px;
+}
+
+.mb15 {
+    margin-bottom:15px;
+}
+
+.mt10 {
+    margin-top:10px;
+}
+
+.mt20 {
+    margin-top:20px;
+}
+
+.mb20 {
+    margin-bottom:20px;
+}
+
+.mtn {
+    margin-top:0px;
+}
+
+.mt5 {
+    margin-top:5px;
+}
+
+.ml5{
+    margin-left:5px;
+}
+
+.mb5 {
+    margin-bottom:5px;
+}
+
+.mb10 {
+    margin-bottom:10px;
+}
+
+.mbn {
+    margin-bottom:0px;
+}
+
+.fs12{
+	font-size:12px;
+}
+
+.fs10{
+	font-size:10px;
+}
+
+.fs20{
+	font-size:20px;
+}
+
+.form-group label, .control-group label {
+	font-weight:400;
+	font-size:12px;
+}
+
+#tab_table .nav .open>a, #tab_table .nav .open>a:focus, #tab_table .nav .open>a:hover{
+	background-color:#fff;
+	border-color:#ddd;
+}
+
+#tab_table .nav .active>a, #tab_table .nav .active>a:focus, #tab_table .nav .active>a:hover{
+	border-bottom-color:transparent;
+}
+
+#tab_table .dropdown-menu{
+	padding-top:10px;
+}
+
+#tab_table .nav .active .dropdown-menu{
+	border-top:0px;
+	margin-top:0px;
+}
+
+#tab_table .dropdown li a{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.panel-title{
+    border-left:2px solid red;
+    padding-left:10px;
+    margin-bottom: 20px;
+}
+
+ul.messages li.sub-message{
+    padding-left:46px;
+}
