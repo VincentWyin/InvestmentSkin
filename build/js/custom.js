@@ -2481,6 +2481,11 @@ if (typeof NProgress != 'undefined') {
 				  }]
 				});
 				
+				if($('#calendar').attr("data-content") == 0)
+				{
+					$('#calendar').fullCalendar('removeEventSources');  
+				}
+
 			};
 	   
 		/* DATA TABLES */

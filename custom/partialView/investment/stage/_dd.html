@@ -1,218 +1,104 @@
 
-<form class="form-horizontal form-label-left">
-	<div class="row">
-		<div class="col-md-6">
-			<div class="x_panel">
-				<div class="x_title">
-					Recommended By
-				</div>
-				<div class="x_content">
-                    <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Date">
-                            Name
-                        </label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
-                            <input type="text" id="Date" class="form-control col-md-7 col-xs-12">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-type" class="control-label col-md-3 col-sm-3 col-xs-12">Position</label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
-                            <select class="form-control" id="contact-type">
-                                <option>- Not Specified -</option>
-                            </select>
-                        </div>
-                    </div>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-6">
-			<div class="x_panel">
-				<div class="x_title">
-					Concurred By
-				</div>
-				<div class="x_content">
-                    <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Date">
-                            Name
-                        </label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
-                            <input type="text" id="Date" class="form-control col-md-7 col-xs-12">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-type" class="control-label col-md-3 col-sm-3 col-xs-12">Position</label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
-                            <select class="form-control" id="contact-type">
-                                <option>- Not Specified -</option>
-                            </select>
-                        </div>
-                    </div>
-				</div>
-			</div>
-		</div>
+<div class="row mt10">
+	<div class="col-xs-12 col-md-6">
+		<h4 class="panel-title">Task Checklist</h4>
+		<ul class="to_do mb20">
+			<li>
+				<p><input type="checkbox" checked class="flat"> Signing Non-Disclosure Agreement (NDA)</p>
+			</li><li>
+				<p><input type="checkbox" checked class="flat"> Initial due diligence & Management Presentation</p>
+			</li><li>
+				<p><input type="checkbox" checked class="flat"> Deal Alert (first review with Investment Committee)</p>
+			</li><li>
+				<p><input type="checkbox" checked class="flat"> Non-Binding Letter of Intent (LOI) or First Round Bid</p>
+			</li><li>
+				<p><input type="checkbox" checked class="flat"> Further due diligence with management</p>
+			</li><li>
+				<p><input type="checkbox" checked class="flat"> Building Internal Operating Model</p>
+			</li><li>
+				<p><input type="checkbox" checked class="flat"> Preliminary Investment Memorandum</p>
+			</li><li>
+				<p><input type="checkbox" checked class="flat"> Final Due Diligence and process up to submit a binding bid</p>
+			</li><li>
+				<p><input type="checkbox" checked class="flat"> Update and Final Investment Committee Approval</p>
+			</li><li>
+				<p><input type="checkbox" class="flat"> Final Binding Bid and Signing</p>
+			</li>
+		</ul>
 	</div>
-</form>
-
-
-<form class="form-horizontal form-label-left">
-	<div class="row">
-		<div class="col-md-4">
-			<div class="x_panel">
-				<div class="x_title">
-					Task
-				</div>
-				<div class="x_content">
-
-					<div style="height:200px;" class="">
-					    <table id="contact_activity" class="nowrap">
-					        <tbody>
-					        	<tr><td>[-] -- Due Diligence Tasks</td></tr>
-					        </tbody>
-					    </table>
+	<div class="col-xs-12 col-md-6">
+		<h4 class="panel-title">Review and Signoff Workflow</h4>
+		<ul class="list-unstyled timeline widget ptn">
+			<li style="background: white;">
+				<div class="block">
+					<div class="block_content">
+						<h2 class="title"><a>Financial report review</a></h2>
+						<div class="byline">
+							<span>2018-Apr-24</span> by <a>All member</a>
+						</div>
+						<p class="excerpt">Cash flow & liquidity is not found, please collect it ASAP.
 					</div>
-                    <div>
-						Note: Completed Task In Green; Due Task in Red.
-                    </div>
 				</div>
-			</div>
-		</div>
-		<div class="col-md-8">
-			<div class="x_panel">
-				<div class="x_title">
-					Task Detail
-				</div>
-				<div class="x_content">
-                    <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Date">
-                            Task Name
-                        </label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
-                            <input type="text" id="Date" class="form-control col-md-7 col-xs-12">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Date">
-                            Duration
-                        </label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
-                            <input type="text" id="Date" class="form-control col-md-7 col-xs-12">
-                        </div>
-                    </div>
-					<div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="spouse_bday">
-                            Start
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback mbn">
-                            <input type="text" class="form-control col-md-7 col-xs-12 has-feedback-left cust_datetimepicker" id="spouse_bday">
-                            <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
-                        </div>
-                    </div>
-					<div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="spouse_bday">
-                            Finish
-                        </label>
-                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback mbn">
-                            <input type="text" class="form-control col-md-7 col-xs-12 has-feedback-left cust_datetimepicker" id="spouse_bday">
-                            <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Date">
-                            % Completed
-                        </label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
-                            <input type="text" id="Date" class="form-control col-md-7 col-xs-12">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Date">
-                            Predecessors
-                        </label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
-                            <input type="text" id="Date" class="form-control col-md-7 col-xs-12">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="comment">
-                            Task Notes
-                        </label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
-                            <textarea id="comment" class="form-control" name="comment" data-parsley-trigger="keyup"
-                                      data-parsley-minlength="20" data-parsley-maxlength="100"
-                                      data-parsley-validation-threshold="10"></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-type" class="control-label col-md-3 col-sm-3 col-xs-12">Show On Report</label>
-                        <div class="col-md-9 col-sm-9 col-xs-12">
-                            <select class="form-control" id="contact-type">
-                                <option>Yes</option>
-                                <option>No</option>
-                            </select>
-                        </div>
-                    </div>
-				</div>
-			</div>
-			<div class="x_panel">
-				<div class="x_title">
-					File Attachement
-				</div>
-				<div class="x_content">
-
-					<div class="table-responsive">
-					    <table class="table table-striped">
-					        <thead>
-					            <tr class="headings">
-					                <th>&nbsp;</th>
-					                <th>File Name</th>
-					                <th>Description</th>
-					                <th>Folder</th>
-					            </tr>
-					        </thead>
-					        <tbody>
-								<tr style="height:100px;">
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-					        </tbody>
-					    </table>
+			</li><li style="background: white;">
+				<div class="block">
+					<div class="block_content">
+						<h2 class="title"><a>Overall review</a></h2>
+						<div class="byline">
+							<span>2018-May-17</span> by <a>All member</a>
+						</div>
+						<p class="excerpt">Passed, Jonathan will monitor the market.
 					</div>
-			        <div class="form-horizontal form-label-left">
-			            <div class="row">
-			                <div class="col-md-6 col-sm-6 col-xs-12">
-			                    <div class="form-group">
-			                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="role_contact">
-			                            Keywords
-			                        </label>
-			                        <div class="col-md-9 col-sm-9 col-xs-12">
-			                            <textarea id="comment" class="form-control" name="comment" data-parsley-trigger="keyup"
-			                                      data-parsley-minlength="20" data-parsley-maxlength="100"
-			                                      data-parsley-validation-threshold="10"></textarea>
-			                        </div>
-			                    </div>
-			                    <div class="form-group">
-			                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="role_contact">
-			                            File Size
-			                        </label>
-			                        <div class="col-md-9 col-sm-9 col-xs-12">
-			                            <input type="text" id="role_contact" class="form-control col-md-7 col-xs-12">
-			                        </div>
-			                    </div>
-						        <div class="form-group">
-						            <div class="col-md-3 col-sm-3 col-xs-12">
-						                <button type="submit" class="btn btn-success">Open</button>
-						            </div>
-						        </div>
-			                </div>
-			            </div>
-			        </div>
 				</div>
-			</div>
-		</div>
+			</li>
+		</ul>
+
+		<h4 class="panel-title mt20">Material Repository <span class="label label-primary">Add</span></h4>
+		<ul class="to_do">
+			<li>
+				<p><i class="fa fa-play"></i> 2018-Apr-14 23:04:43 (10s)</p>
+			</li><li>
+				<p><i class="fa fa-image"></i> Image</p>
+			</li><li>
+				<p><i class="fa fa-envelope"></i> Email</p>
+			</li>
+		</ul>
 	</div>
-</form>
+</div>
 
+<h4 class="panel-title" style="margin-bottom:10px;">Documents</h4>
 
+<div class="row">
+	<div class="col-md-4 col-xs-12">
+		<h5 class="">Commercial</h4>
+		<ul>
+			<li class="text-primary"><a><i class="fa fa-paperclip"></i> Competitive Landscape and Market Position</a></li>
+			<li class="text-danger">Industry Growth/Addressable Market</li>
+			<li class="text-danger">Customer Base/Suppliers</li>
+			<li class="text-primary"><a><i class="fa fa-paperclip"></i> Capital Requirements of the Business</a></li>
+			<li class="text-primary"><a><i class="fa fa-paperclip"></i> Financial Performance (Historical & Projected)</a></li>
+		</ul>
+	</div>
+	<div class="col-md-4 col-xs-12">
+		<h5 class="">Financial</h4>
+		<ul>
+			<li class="text-primary"><a><i class="fa fa-paperclip"></i> Quality of earnings</a></li>
+			<li class="text-primary"><a><i class="fa fa-paperclip"></i> Debt and debt-like items</a></li>
+			<li class="text-primary"><a><i class="fa fa-paperclip"></i> Normal working level of capital</a></li>
+			<li class="text-danger">Cash flow & liquidity</li>
+			<li class="text-primary"><a><i class="fa fa-paperclip"></i> Tax structure</a></li>
+			<li class="text-primary"><a><i class="fa fa-paperclip"></i> Financial KPIs</a></li>
+		</ul>
+	</div>
+	<div class="col-md-4 col-xs-12">
+		<h5 class="">Legal & compliance</h4>
+		<ul>
+			<li class="text-primary"><a><i class="fa fa-paperclip"></i> Corporate filings</a></li>
+			<li class="text-primary"><a><i class="fa fa-paperclip"></i> Property, plant and equipment</a></li>
+			<li class="text-danger">Human resources</li>
+			<li class="text-danger">Health and welfare plans</li>
+			<li class="text-primary"><a><i class="fa fa-paperclip"></i> Information technology</a></li>
+			<li class="text-primary"><a><i class="fa fa-paperclip"></i> Lawsuits / litigation / patents</a></li>
+			<li class="text-danger">Environmental, social & governance</li>
+		</ul>
+	</div>
+</div>

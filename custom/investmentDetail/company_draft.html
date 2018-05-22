@@ -24,6 +24,9 @@
     <link href="../../vendors/pnotify/dist/pnotify.css" rel="stylesheet">
     <link href="../../vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
     <link href="../../vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+    <!-- FullCalendar -->
+    <link href="../../vendors/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+    <link href="../../vendors/fullcalendar/dist/fullcalendar.print.css" rel="stylesheet" media="print">
 
     <!-- Custom Theme Style -->
     <link href="../../build/css/custom.css" rel="stylesheet">
@@ -68,29 +71,51 @@
 		
 			<!-- Investment Header -->
 			<div class="row">
-				<div class="col-md-8 col-xs-12">
+				<div class="col-md-8 col-xs-12 mt10">
 					<div class="x_panel">
 						<div class="x_content">
-							<h3>大米科技有限责任公司 <span class="fs12">[110804801441084]</span></h3>
+							<h3>GoGoVan Initial injection <span class="fs12 hidden">[110804801441084]</span></h3>
 							<div>
-	                            <span class="label label-primary">China</span>
-	                            <span class="label label-primary">Venture</span>
+	                            <span class="label label-primary">Committed Deal</span>
+	                            <span class="label label-primary">LP Interests</span>
 	                            <span class="label label-primary">Direct Company</span>
 							</div>
 							<blockquote class="mt10 mb5">
-								<p class="fs12">手机技术开发；手机生产、手机服务；从事互联网文化活动；技术开发；货物进出口、技术进出口、代理进出口；销售通讯设备；维修仪器仪表；维修办公设备。</p>
+								<p class="fs12">GOGOVAN is the first app-based platform in Asia for transporting goods, which is dedicated in offering excellent and innovative logistic services through APP.
+                                    <br/> <br/>
+                                    The GOGOVAN app was created to connect individuals and businesses directly to thousands of drivers for their real-time logistic needs. We redefine the everyday logistic experience by providing a convenient and efficient service. Over the years, GOGOVAN has expanded its business from Hong Kong to Singapore, South Korea, Mainland China, Taiwan and India, and will continue to expand globally.</p>
 							</blockquote>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-12">
+				<div class="col-md-4 col-xs-12 mt10">
 					<div class="x_panel">
-						<div class="x_content pbn mtn">
-							current stage: <br />
-							<div class="mb10 fs20"><b>Draft</b></div>
-							Next stage:  <br />
-							<b class="fs20">In Progress</b>  <br />
-							<a href="company_inprogress.html" class="mt10 btn btn-primary btn-sm mt5">Go to Next Stage</a>
+						<div class="x_content pbn mtn" style="height:216px;">
+                            <div class="row mt30">
+                                <div class="col-md-6">
+                                    Estimated Amount<br />
+                                    <div class="mb10 fs20"><b>-</b> <span style="font-size:12px;">(USD)</span></div>
+                                </div>
+                                <div class="col-md-6 text-right">
+                                    Days in Current Stage<br />
+                                    <div class="mb10 fs20"><b>3</b> <span style="font-size:12px;">days</span></div>
+                                </div>
+                            </div>
+                            <div class="row mt20">
+                                <div class="col-md-4">
+                                    current stage<br />
+                                    <div class="mb10 fs20"><b>Draft</b></div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mt10 text-left">
+                                        <a href="company_inprogress.html" class="mt10 btn btn-primary btn-sm mt5">Go Now</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 text-right">
+                                    Next stage<br />
+                                    <b class="fs20">In Progress</b>  <br />
+                                </div>
+                            </div>
 						</div>
 					</div>
 				</div>
@@ -99,24 +124,33 @@
 			
 		    <div id="tab_table">
 		        <ul class="nav nav-tabs">
-		            <li class="active"><a href="#progress" data-toggle="tab" class="ml10">Progress</a></li>
-		            <li><a data-toggle="tab" href="#profile">Profile</a></li>
-		            <li class="hidden-xs hidden"><a href="#legal" data-toggle="tab">Legal</a></li>
-		            <li class="hidden-xs"><a href="#events" data-toggle="tab">Events</a></li>
-		            <li class="hidden-xs hidden"><a href="#instruments" data-toggle="tab">Instruments</a></li>
-		            <li class="hidden-xs hidden"><a href="#deals" data-toggle="tab">Deals</a></li>
-		            <li class="hidden-xs hidden"><a href="#roles" data-toggle="tab">Contact Roles</a></li>
-		            <li class="hidden-xs hidden"><a href="#expense" data-toggle="tab">Expense</a></li>
-		            <li class="hidden-xs hidden"><a href="#snapshot" data-toggle="tab">Snapshot</a></li>
-		            <li class="hidden-xs hidden"><a href="#attachments" data-toggle="tab">Attachments</a></li>
-		            <li class="hidden-xs hidden"><a href="#dd" data-toggle="tab">Due Diligence</a></li>
-		            <li class="hidden-xs hidden"><a href="#reporting" data-toggle="tab">Reporting</a></li>
-		            <li class="hidden-xs hidden"><a href="#relationships" data-toggle="tab">Others</a></li>
+		            <li class="active"><a href="#deals" data-toggle="tab">Deals</a></li>
+				    <li class=""><a href="#dd" data-toggle="tab">Due Diligence</a></li>
+		            <li class="hidden-xs"><a href="#attachments" data-toggle="tab">Documents</a></li>
+		            <li class=""><a href="#progress" data-toggle="tab" class="ml10">Progress</a></li>
+		            <li class="hidden-xs"><a data-toggle="tab" href="#profile">Profile</a></li>
+		            <li class=""><a href="#analytics" data-toggle="tab">Analytics</a></li>
+		            <li class="hidden-xs"><a href="#reports" data-toggle="tab">Reports</a></li>
 		        </ul>
 			</div>
 
             <div class="tab-content">
-                <div id="progress" class="tab-pane fade active in bg-white p10">
+                <div id="deals" class="tab-pane fade active in bg-white p10">
+		        	<script>
+						$("#deals").load("../partialView/investment/stage/_deals1.html");
+	 				</script>
+                </div>
+                <div id="dd" class="tab-pane fade bg-white p10">
+					<script>
+						$("#dd").load("../partialView/investment/stage/_dd1.html");
+	 				</script>
+                </div>
+                <div id="attachments" class="tab-pane fade bg-white p10">
+		        	<script>
+						$("#attachments").load("../partialView/investment/stage/_attachments1.html");
+	 				</script>
+                </div>
+                <div id="progress" class="tab-pane fade bg-white p10">
 		        	<script>
 						$("#progress").load("../partialView/investment/stage/_progress1.html");
 	 				</script>
@@ -126,59 +160,14 @@
 						$("#profile").load("../partialView/investment/stage/_profile.html");
 	 				</script>
                 </div>
-                <div id="relationships" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#relationships").load("../partialView/investment/_relationships.html");
-	 				</script>
-                </div>
-                <div id="deals" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#deals").load("../partialView/investment/stage/_deals1.html");
-	 				</script>
-                </div>
-                <div id="legal" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#legal").load("../partialView/investment/_legal.html");
-	 				</script>
-                </div>
-                <div id="instruments" class="tab-pane fade bg-white p10">
+                <div id="analytics" class="tab-pane fade bg-white p10">
 					<script>
-						$("#instruments").load("../partialView/investment/_instruments.html");
+						$("#analytics").load("../partialView/investment/stage/_analytics.html");
 	 				</script>
                 </div>
-                <div id="roles" class="tab-pane fade bg-white p10">
+                <div id="reports" class="tab-pane fade bg-white p10">
 		        	<script>
-						$("#roles").load("../partialView/investment/_roles.html");
-	 				</script>
-                </div>
-                <div id="events" class="tab-pane fade bg-white p10">
-					<script>
-						$("#events").load("../partialView/investment/stage/_events1.html");
-	 				</script>
-                </div>
-                <div id="expense" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#expense").load("../partialView/investment/_expense.html");
-	 				</script>
-                </div>
-                <div id="snapshot" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#snapshot").load("../partialView/investment/_snapshot.html");
-	 				</script>
-                </div>
-                <div id="attachments" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#attachments").load("../partialView/investment/stage/_attachments1.html");
-	 				</script>
-                </div>
-                <div id="dd" class="tab-pane fade bg-white p10">
-					<script>
-						$("#dd").load("../partialView/investment/_dd.html");
-	 				</script>
-                </div>
-                <div id="reporting" class="tab-pane fade bg-white p10">
-					<script>
-						$("#reporting").load("../partialView/investment/_reporting.html");
+						$("#reports").load("../partialView/investment/stage/_reports.html");
 	 				</script>
                 </div>
             </div>
@@ -189,6 +178,9 @@
       </div>
     </div>
 
+
+    
+    <!-- modal -->
     <div class="modal fade" id="new_note">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -265,6 +257,79 @@
             </div>
         </div>
     </div>
+
+    <div id="CalenderModalNew" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title" id="myModalLabel">New Calendar Entry</h4>
+          </div>
+          <div class="modal-body">
+            <div id="testmodal" style="padding: 5px 20px;">
+              <form id="antoform" class="form-horizontal calender" role="form">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Title</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="title" name="title">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Minutes</label>
+                  <div class="col-sm-9">
+                    <textarea class="form-control" style="height:55px;" id="descr" name="descr"></textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default antoclose" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary antosubmit">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="CalenderModalEdit" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title" id="myModalLabel2">Edit Calendar Entry</h4>
+          </div>
+          <div class="modal-body">
+
+            <div id="testmodal2" style="padding: 5px 20px;">
+              <form id="antoform2" class="form-horizontal calender" role="form">
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Title</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="title2" name="title2">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-3 control-label">Minutes</label>
+                  <div class="col-sm-9">
+                    <textarea class="form-control" style="height:55px;" id="descr2" name="descr"></textarea>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default antoclose2" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary antosubmit2">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="fc_create" data-toggle="modal" data-target="#CalenderModalNew"></div>
+    <div id="fc_edit" data-toggle="modal" data-target="#CalenderModalEdit"></div>
+    <!-- modal end -->
 	
     <!-- jQuery -->
     <script src="../../vendors/jquery/dist/jquery.min.js"></script>
@@ -278,8 +343,10 @@
     <script src="../../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
     <!-- iCheck -->
     <script src="../../vendors/iCheck/icheck.min.js"></script>
-    <!-- bootstrap-daterangepicker -->
+    <!-- FullCalendar -->
     <script src="../../vendors/moment/min/moment.min.js"></script>
+    <script src="../../vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+    <!-- bootstrap-daterangepicker -->
     <script src="../../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
     <!-- bootstrap-datetimepicker -->    
     <script src="../../vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
@@ -310,7 +377,16 @@
 
     <script>
         $(function () {
-			
+            $("#document-list ul.pagination a.btn-app").on("click", function() {
+                var filter = $(this).attr("data-filter");
+                console.log(filter);
+                if (filter) {
+                    $("#document-list .profile_details").find(".profile_view:not([data-search*='" + filter + "'])").parent().slideUp();
+                    $("#document-list .profile_details").find(".profile_view[data-search*='" + filter + "']").parent().slideDown();
+                } else {
+                    $("#document-list .profile_details").slideDown();
+                }
+            });
         })
     </script>
 	
