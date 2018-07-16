@@ -128,11 +128,10 @@
 						<ul class="nav nav-tabs">
 							<li class="active"><a href="#deals" data-toggle="tab">Deal Room</a></li>
 							<li class=""><a href="#dd" data-toggle="tab">Due Diligence</a></li>
-							<li class="hidden-xs"><a href="#attachments" data-toggle="tab">Documents</a></li>
-							<li class=""><a href="#progress" data-toggle="tab" class="ml10">Progress</a></li>
-							<li class="hidden-xs"><a data-toggle="tab" href="#profile">Profile</a></li>
+							<li class="hidden-xs"><a href="#attachments" data-toggle="tab">Deal Documents</a></li>
 							<li class=""><a href="#analytics" data-toggle="tab">Analytics</a></li>
-							<li class="hidden-xs"><a href="#reports" data-toggle="tab">Reports</a></li>
+							<li class="hidden-xs"><a href="#execution" data-toggle="tab">Execution</a></li>
+							<li class="hidden-xs"><a href="#icrs" data-toggle="tab">Investment Committee Review and Signoff</a></li>
 						</ul>
 					</div>
 
@@ -146,17 +145,7 @@
 					<script>
 						$("#dd").load("../partialView/investment/stage/_dd.html");
 	 				</script>
-                </div>
-                <div id="progress" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#progress").load("../partialView/investment/stage/_progress4.html");
-	 				</script>
-                </div>
-                <div id="profile" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#profile").load("../partialView/investment/stage/_profile.html");
-	 				</script>
-                </div>
+						</div>
                 <div id="analytics" class="tab-pane fade bg-white p10">
 					<script>
 						$("#analytics").load("../partialView/investment/stage/_analytics.html");
@@ -173,6 +162,16 @@
 	 				</script>
                 </div>
             </div>
+						<div id="execution" class="tab-pane fade bg-white p10">
+							<script>
+								$("#execution").load("../partialView/investment/stage/_execution.html");
+							</script>
+						</div>
+						<div id="icrs" class="tab-pane fade bg-white p10">
+							<script>
+								$("#icrs").load("../partialView/investment/stage/_icrs.html");
+							</script>
+						</div>
 
         </div>
         <!-- /page content -->

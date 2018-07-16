@@ -4580,3 +4580,7 @@ ul.messages li.sub-message{
     line-height: 25px;
 }
 
+.sub-title{
+    padding-left: 20px;
+    color: #002b80 !important;
+}

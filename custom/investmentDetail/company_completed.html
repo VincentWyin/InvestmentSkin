@@ -74,10 +74,7 @@
 				<div class="col-md-8 col-xs-12 mt10">
 					<div class="x_panel">
 						<div class="x_content">
-                            <h3>
-                                GoGoVan Initial injection
-                                <a href="#chart" data-toggle="modal" class="fs12 ml10">chart</a>
-                            </h3>
+							<h3>GoGoVan Initial injection <span class="fs12 hidden">[110804801441084]</span></h3>
 							<div>
 	                            <span class="label label-primary">Committed Deal</span>
 	                            <span class="label label-primary">LP Interests</span>
@@ -95,28 +92,28 @@
 					<div class="x_panel">
 						<div class="x_content pbn mtn" style="height:216px;">
                             <div class="row mt30">
-                                <div class="col-md-6 col-xs-6">
+                                <div class="col-md-6">
                                     Estimated Amount<br />
                                     <div class="mb10 fs20"><b>10,000,000</b> <span style="font-size:12px;">(USD)</span></div>
                                 </div>
-                                <div class="col-md-6 text-right col-xs-6">
+                                <div class="col-md-6 text-right">
                                     Days in Current Stage<br />
-                                    <div class="mb10 fs20"><b>22</b> <span style="font-size:12px;">days</span></div>
+                                    <div class="mb10 fs20"><b>5</b> <span style="font-size:12px;">days</span></div>
                                 </div>
                             </div>
                             <div class="row mt20">
-                                <div class="col-md-5 col-xs-5">
+                                <div class="col-md-5">
                                     current stage<br />
-                                    <div class="mb10 fs20"><b>Investment Decision</b></div>
+                                    <div class="mb10 fs20"><b>In Progress</b></div>
                                 </div>
-                                <div class="col-md-2 col-xs-2">
+                                <div class="col-md-2">
                                     <div class="mt10 text-center">
-                                        <a href="company_post_investment.html" class="mt10 btn btn-primary btn-sm mt5">Go Now</a>
+                                        <a href="company_investment_descision.html" class="mt10 btn btn-primary btn-sm mt5">Go Now</a>
                                     </div>
                                 </div>
-                                <div class="col-md-5 text-right col-xs-5">
+                                <div class="col-md-5 text-right">
                                     Next stage<br />
-                                    <b class="fs20">Post-Investment</b>  <br />
+                                    <b class="fs20">Investment Decision</b>  <br />
                                 </div>
                             </div>
 						</div>
@@ -124,47 +121,22 @@
 				</div>
 			</div>
 
-			
 		    <div id="tab_table">
 		        <ul class="nav nav-tabs">
-		            <li class="active"><a href="#deals" data-toggle="tab">Deal Room</a></li>
-				    <li class=""><a href="#dd" data-toggle="tab">Due Diligence</a></li>
-		            <li class="hidden-xs"><a href="#attachments" data-toggle="tab">Deal Documents</a></li>
-		            <li class=""><a href="#analytics" data-toggle="tab">Analytics</a></li>
-		            <li class="hidden-xs"><a href="#execution" data-toggle="tab">Execution</a></li>
-		            <li class="hidden-xs"><a href="#icrs" data-toggle="tab">Investment Committee Review and Signoff</a></li>
+		            <li class="active"><a data-toggle="tab" href="#profile">Company Profile</a></li>
+		            <li class="hidden-xs"><a href="#reports" data-toggle="tab">Reports</a></li>
 		        </ul>
 			</div>
 
             <div class="tab-content">
-                <div id="deals" class="tab-pane active in fade bg-white p10">
+                <div id="profile" class="tab-pane fade active in bg-white p10">
 		        	<script>
-						$("#deals").load("../partialView/investment/stage/_deals3.html");
+						$("#profile").load("../partialView/investment/stage/_profile.html");
 	 				</script>
                 </div>
-                <div id="dd" class="tab-pane fade bg-white p10">
-					<script>
-						$("#dd").load("../partialView/investment/stage/_dd.html");
-	 				</script>
-                </div>
-                <div id="analytics" class="tab-pane fade bg-white p10">
-					<script>
-						$("#analytics").load("../partialView/investment/stage/_analytics.html");
-	 				</script>
-                </div>
-                <div id="attachments" class="tab-pane fade bg-white p10">
+                <div id="reports" class="tab-pane fade bg-white p10">
 		        	<script>
-						$("#attachments").load("../partialView/investment/stage/_attachments3.html");
-	 				</script>
-                </div>
-                <div id="execution" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#execution").load("../partialView/investment/stage/_execution.html");
-	 				</script>
-                </div>
-                <div id="icrs" class="tab-pane fade bg-white p10">
-		        	<script>
-						$("#icrs").load("../partialView/investment/stage/_icrs.html");
+						$("#reports").load("../partialView/investment/stage/_reports.html");
 	 				</script>
                 </div>
             </div>
@@ -175,7 +147,6 @@
       </div>
     </div>
 
-    
     <!-- modal -->
     <div class="modal fade" id="new_note">
         <div class="modal-dialog">
@@ -217,7 +188,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="modal fade" id="new_task">
         <div class="modal-dialog">
@@ -348,22 +318,22 @@
     <script src="../../vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
     <!-- jQuery Tags Input -->
     <script src="../../vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
-    <!-- Datatables -->
-    <script src="../../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="../../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
-    <script src="../../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-    <script src="../../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
-    <script src="../../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
-    <script src="../../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
-    <script src="../../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
-    <script src="../../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
-    <script src="../../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
-    <script src="../../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="../../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
-    <script src="../../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
-    <script src="../../vendors/jszip/dist/jszip.min.js"></script>
-    <script src="../../vendors/pdfmake/build/pdfmake.min.js"></script>
-    <script src="../../vendors/pdfmake/build/vfs_fonts.js"></script>
+      <!-- Datatables -->
+      <script src="../../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+      <script src="../../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+      <script src="../../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+      <script src="../../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+      <script src="../../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+      <script src="../../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+      <script src="../../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+      <script src="../../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+      <script src="../../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+      <script src="../../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+      <script src="../../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+      <script src="../../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+      <script src="../../vendors/jszip/dist/jszip.min.js"></script>
+      <script src="../../vendors/pdfmake/build/pdfmake.min.js"></script>
+      <script src="../../vendors/pdfmake/build/vfs_fonts.js"></script>
 
     <!-- Custom Theme Scripts -->
     <script src="../../build/js/custom.js"></script>
